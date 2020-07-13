@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 4.x\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 11:57-0600\n"
-"PO-Revision-Date: 2018-10-13 12:00-0600\n"
+"Report-Msgid-Bugs-To: https://motion-project.github.io\n"
+"POT-Creation-Date: 2019-12-29 16:29-0700\n"
+"PO-Revision-Date: 2020-01-12 17:45-0700\n"
 "Last-Translator: MrDave <MotionMrDave@gmail.com>\n"
 "Language-Team: MrDave <MotionMrDave@gmail.com>\n"
 "Language: fi\n"
@@ -16,4136 +16,4292 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: conf.c:2108
+#: src/conf.c
+#, c-format
+msgid "%s after version %s"
+msgstr "%s version %s jälkeen"
+
+#: src/conf.c
 #, c-format
 msgid "Unknown config option \"%s\""
-msgstr ""
+msgstr "Tuntematon asetusvaihtoehto \" %s \""
 
-#: conf.c:2208
+#: src/conf.c
 #, c-format
 msgid "Writing config file to %s"
-msgstr ""
+msgstr "Konfigurointitiedoston kirjoittaminen tiedostoon %s"
 
-#: conf.c:2354
+#: src/conf.c
 #, c-format
 msgid "Configfile %s not found - trying defaults."
-msgstr ""
+msgstr "Määritä tiedostoa %s ei löydy - yritetään oletusasetuksia."
 
-#: conf.c:2358
+#: src/conf.c
 msgid "Error getcwd"
-msgstr ""
+msgstr "Virhe getcwd"
 
-#: conf.c:2376
+#: src/conf.c
 #, c-format
 msgid "could not open configfile %s"
-msgstr ""
+msgstr "%s-tiedostoa ei voitu avata"
 
-#: conf.c:2386
+#: src/conf.c
+#, c-format
+msgid "Invalid file name %s"
+msgstr "Virheellinen tiedostonimi %s"
+
+#: src/conf.c
 #, c-format
 msgid "Processing thread 0 - config file %s"
-msgstr ""
+msgstr "Käsittelylanka 0 - konfigurointitiedosto %s"
 
-#: conf.c:2391
+#: src/conf.c
 msgid "No config file to process, using default values"
-msgstr ""
+msgstr "Ei prosessoitavaa konfigurointitiedostoa oletusarvojen avulla"
 
-#: conf.c:2447
+#: src/conf.c
 #, c-format
 msgid "Writing configuration parameters from all files (%d):"
-msgstr ""
+msgstr "Kokoonpanoparametrien kirjoittaminen kaikista tiedostoista ( %d):"
 
-#: conf.c:2450
+#: src/conf.c
 #, c-format
 msgid "Thread %d - Config file: %s"
-msgstr ""
+msgstr "Ketju %d - Konfigurointitiedosto: %s"
 
-#: conf.c:2468
+#: src/conf.c
 #, c-format
 msgid "%-25s <redacted>"
-msgstr ""
+msgstr "%-25s <korjattu>"
 
-#: conf.c:2658
+#: src/conf.c
 msgid "Unable to locate vid_control_params"
-msgstr ""
+msgstr "Vid-ohjausparametreja ei löydy"
 
-#: conf.c:2664
+#: src/conf.c
 msgid "No value provided to put into vid_control_params"
-msgstr ""
+msgstr "Ei arvoa, joka asetetaan vid-ohjausparamereihin"
 
-#: conf.c:2774
+#: src/conf.c
 msgid "Error compiling regex in copy_uri"
-msgstr ""
+msgstr "Virhe kommentoidessaan regeksia kopiossa uri"
 
-#: conf.c:2781
+#: src/conf.c
 msgid "Invalid origin for cors_header in copy_uri"
-msgstr ""
+msgstr "Virheellinen alku cors-otsikolle kopiossa uri"
 
-#: conf.c:3019
+#: src/conf.c
 #, c-format
 msgid "Processing config file %s"
-msgstr ""
+msgstr "Prosessoidaan konfigurointitiedostoa %s"
 
-#: conf.c:3034
+#: src/conf.c
 #, c-format
 msgid "Camera directory config %s not found"
-msgstr ""
+msgstr "Kamerahakemistokonfiguraatiota %s ei löydy"
 
-#: conf.c:3068
+#: src/conf.c
 #, c-format
 msgid "Camera config file %s not found"
-msgstr ""
+msgstr "Kameran konfigurointitiedostoa %s ei löydy"
 
-#: conf.c:3106
+#: src/conf.c
 #, c-format
 msgid "Processing camera config file %s"
-msgstr ""
+msgstr "Käsitellään kameran konfigurointitiedostoa %s"
 
-#: conf.c:3152
+#: src/conf.c
 msgid "daemon"
-msgstr ""
+msgstr "demoni"
 
-#: conf.c:3153
+#: src/conf.c
 msgid "setup_mode"
-msgstr ""
+msgstr "asetustila"
 
-#: conf.c:3154
+#: src/conf.c
 msgid "pid_file"
-msgstr ""
+msgstr "pid-tiedosto"
 
-#: conf.c:3155
+#: src/conf.c
 msgid "log_file"
-msgstr ""
+msgstr "loki tiedosto"
 
-#: conf.c:3156
+#: src/conf.c
 msgid "log_level"
-msgstr ""
+msgstr "lokitaso"
 
-#: conf.c:3157
+#: src/conf.c
 msgid "log_type"
-msgstr ""
+msgstr "lokityyppi"
 
-#: conf.c:3158
+#: src/conf.c
 msgid "quiet"
-msgstr ""
+msgstr "hiljainen"
 
-#: conf.c:3159
+#: src/conf.c
 msgid "native_language"
-msgstr ""
+msgstr "äidinkieli"
 
-#: conf.c:3160
+#: src/conf.c
 msgid "camera_name"
-msgstr ""
+msgstr "kameran nimi"
 
-#: conf.c:3161
+#: src/conf.c
 msgid "camera_id"
-msgstr ""
+msgstr "kameran tunnus"
 
-#: conf.c:3162
+#: src/conf.c
 msgid "target_dir"
-msgstr ""
+msgstr "kohdeohjaaja"
 
-#: conf.c:3163
+#: src/conf.c
 msgid "videodevice"
-msgstr ""
+msgstr "videodevice"
 
-#: conf.c:3164
+#: src/conf.c
 msgid "vid_control_params"
-msgstr ""
+msgstr "vid ohjausparametrit"
 
-#: conf.c:3165
+#: src/conf.c
 msgid "v4l2_palette"
-msgstr ""
+msgstr "v4l2-paletti"
 
-#: conf.c:3166
+#: src/conf.c
 msgid "input"
-msgstr ""
+msgstr "panos"
 
-#: conf.c:3167
+#: src/conf.c
 msgid "norm"
-msgstr ""
+msgstr "normi"
 
-#: conf.c:3168
+#: src/conf.c
 msgid "frequency"
-msgstr ""
+msgstr "taajuus"
 
-#: conf.c:3169
+#: src/conf.c
 msgid "auto_brightness"
-msgstr ""
+msgstr "automaattinen kirkkaus"
 
-#: conf.c:3170
+#: src/conf.c
 msgid "tunerdevice"
-msgstr ""
+msgstr "tunerdevice"
 
-#: conf.c:3171
+#: src/conf.c
 msgid "roundrobin_frames"
-msgstr ""
+msgstr "pyöreän rivin kehykset"
 
-#: conf.c:3172
+#: src/conf.c
 msgid "roundrobin_skip"
-msgstr ""
+msgstr "pyöreä satama"
 
-#: conf.c:3173
+#: src/conf.c
 msgid "roundrobin_switchfilter"
-msgstr ""
+msgstr "pyöreärobinisuodatin"
 
-#: conf.c:3174
+#: src/conf.c
 msgid "netcam_url"
-msgstr ""
+msgstr "netcam url"
 
-#: conf.c:3175
+#: src/conf.c
 msgid "netcam_highres"
-msgstr ""
+msgstr "netcam highres"
 
-#: conf.c:3176
+#: src/conf.c
 msgid "netcam_userpass"
-msgstr ""
+msgstr "netcam userpass"
 
-#: conf.c:3177
+#: src/conf.c
 msgid "netcam_keepalive"
-msgstr ""
+msgstr "netcam pitää yllä"
 
-#: conf.c:3178
+#: src/conf.c
 msgid "netcam_proxy"
-msgstr ""
+msgstr "netcam-välityspalvelin"
 
-#: conf.c:3179
+#: src/conf.c
 msgid "netcam_tolerant_check"
-msgstr ""
+msgstr "netcam-toleranssitarkistus"
 
-#: conf.c:3180
+#: src/conf.c
 msgid "netcam_use_tcp"
-msgstr ""
+msgstr "netcam käyttö TCP"
 
-#: conf.c:3181
+#: src/conf.c
+msgid "netcam_decoder"
+msgstr "netcam-dekooderi"
+
+#: src/conf.c
 msgid "mmalcam_name"
-msgstr ""
+msgstr "mmalcam nimi"
 
-#: conf.c:3182
+#: src/conf.c
 msgid "mmalcam_control_params"
-msgstr ""
+msgstr "mmalcam-ohjausparametrit"
 
-#: conf.c:3183
+#: src/conf.c
 msgid "width"
-msgstr ""
+msgstr "leveys"
 
-#: conf.c:3184
+#: src/conf.c
 msgid "height"
-msgstr ""
+msgstr "korkeus"
 
-#: conf.c:3185
+#: src/conf.c
 msgid "framerate"
-msgstr ""
+msgstr "ruudunpäivitysnopeus"
 
-#: conf.c:3186
+#: src/conf.c
 msgid "minimum_frame_time"
-msgstr ""
+msgstr "vähimmäiskuvausaika"
 
-#: conf.c:3187
+#: src/conf.c
 msgid "rotate"
-msgstr ""
+msgstr "kiertää"
 
-#: conf.c:3188
+#: src/conf.c
 msgid "flip_axis"
-msgstr ""
+msgstr "kääntöakseli"
 
-#: conf.c:3189
+#: src/conf.c
 msgid "locate_motion_mode"
-msgstr ""
+msgstr "paikantaa liiketila"
 
-#: conf.c:3190
+#: src/conf.c
 msgid "locate_motion_style"
-msgstr ""
+msgstr "paikantaa liiketyyli"
 
-#: conf.c:3191
+#: src/conf.c
 msgid "text_left"
-msgstr ""
+msgstr "teksti jäljellä"
 
-#: conf.c:3192
+#: src/conf.c
 msgid "text_right"
-msgstr ""
+msgstr "teksti oikein"
 
-#: conf.c:3193
+#: src/conf.c
 msgid "text_changes"
-msgstr ""
+msgstr "tekstin muutokset"
 
-#: conf.c:3194
+#: src/conf.c
 msgid "text_scale"
-msgstr ""
+msgstr "tekstiasteikko"
 
-#: conf.c:3195
+#: src/conf.c
 msgid "text_event"
-msgstr ""
+msgstr "tekstitapahtuma"
 
-#: conf.c:3196
+#: src/conf.c
 msgid "emulate_motion"
-msgstr ""
+msgstr "jäljitellä liikettä"
 
-#: conf.c:3197
+#: src/conf.c
 msgid "threshold"
-msgstr ""
+msgstr "kynnys"
 
-#: conf.c:3198
+#: src/conf.c
 msgid "threshold_maximum"
-msgstr ""
+msgstr "kynnyksen enimmäismäärä"
 
-#: conf.c:3199
+#: src/conf.c
 msgid "threshold_tune"
-msgstr ""
+msgstr "kynnyksen viritys"
 
-#: conf.c:3200
+#: src/conf.c
 msgid "noise_level"
-msgstr ""
+msgstr "melutaso"
 
-#: conf.c:3201
+#: src/conf.c
 msgid "noise_tune"
-msgstr ""
+msgstr "meluääni"
 
-#: conf.c:3202
+#: src/conf.c
 msgid "despeckle_filter"
-msgstr ""
+msgstr "tuhoamissuodatin"
 
-#: conf.c:3203
+#: src/conf.c
 msgid "area_detect"
-msgstr ""
+msgstr "alueen havaitseminen"
 
-#: conf.c:3204
+#: src/conf.c
 msgid "mask_file"
-msgstr ""
+msgstr "peitetiedosto"
 
-#: conf.c:3205
+#: src/conf.c
 msgid "mask_privacy"
-msgstr ""
+msgstr "naamio yksityisyyttä"
 
-#: conf.c:3206
+#: src/conf.c
 msgid "smart_mask_speed"
-msgstr ""
+msgstr "älykäs naamion nopeus"
 
-#: conf.c:3207
+#: src/conf.c
 msgid "lightswitch_percent"
-msgstr ""
+msgstr "valonkytkinprosentti"
 
-#: conf.c:3208
+#: src/conf.c
 msgid "lightswitch_frames"
-msgstr ""
+msgstr "valokytkinkehykset"
 
-#: conf.c:3209
+#: src/conf.c
 msgid "minimum_motion_frames"
-msgstr ""
+msgstr "vähimmäisliikekehykset"
 
-#: conf.c:3210
+#: src/conf.c
 msgid "event_gap"
-msgstr ""
+msgstr "tapahtumakuilu"
 
-#: conf.c:3211
+#: src/conf.c
 msgid "pre_capture"
-msgstr ""
+msgstr "esikaappaus"
 
-#: conf.c:3212
+#: src/conf.c
 msgid "post_capture"
-msgstr ""
+msgstr "sieppauksen jälkeen"
 
-#: conf.c:3213
+#: src/conf.c
 msgid "on_event_start"
-msgstr ""
+msgstr "tapahtuman alkaessa"
 
-#: conf.c:3214
+#: src/conf.c
 msgid "on_event_end"
-msgstr ""
+msgstr "tapahtuman lopussa"
 
-#: conf.c:3215
+#: src/conf.c
 msgid "on_picture_save"
-msgstr ""
+msgstr "kuvassa tallenna"
 
-#: conf.c:3216
+#: src/conf.c
 msgid "on_area_detected"
-msgstr ""
+msgstr "havaitulla alueella"
 
-#: conf.c:3217
+#: src/conf.c
 msgid "on_motion_detected"
-msgstr ""
+msgstr "liikkeessä havaittu"
 
-#: conf.c:3218
+#: src/conf.c
 msgid "on_movie_start"
-msgstr ""
+msgstr "elokuvan alkaessa"
 
-#: conf.c:3219
+#: src/conf.c
 msgid "on_movie_end"
-msgstr ""
+msgstr "elokuvan lopussa"
 
-#: conf.c:3220
+#: src/conf.c
 msgid "on_camera_lost"
-msgstr ""
+msgstr "kamerassa kadonnut"
 
-#: conf.c:3221
+#: src/conf.c
 msgid "on_camera_found"
-msgstr ""
+msgstr "kamerasta löytyi"
 
-#: conf.c:3222
+#: src/conf.c
 msgid "picture_output"
-msgstr ""
+msgstr "kuvan lähtö"
 
-#: conf.c:3223
+#: src/conf.c
 msgid "picture_output_motion"
-msgstr ""
+msgstr "kuvan lähtöliike"
 
-#: conf.c:3224
+#: src/conf.c
 msgid "picture_type"
-msgstr ""
+msgstr "kuvatyyppi"
 
-#: conf.c:3225
+#: src/conf.c
 msgid "picture_quality"
-msgstr ""
+msgstr "kuvanlaatu"
 
-#: conf.c:3226
+#: src/conf.c
 msgid "picture_exif"
-msgstr ""
+msgstr "kuva exif"
 
-#: conf.c:3227
+#: src/conf.c
 msgid "picture_filename"
-msgstr ""
+msgstr "kuvatiedostonimi"
 
-#: conf.c:3228
+#: src/conf.c
 msgid "snapshot_interval"
-msgstr ""
+msgstr "tilannekuvaväli"
 
-#: conf.c:3229
+#: src/conf.c
 msgid "snapshot_filename"
-msgstr ""
+msgstr "tilannekuvan tiedostonimi"
 
-#: conf.c:3230
+#: src/conf.c
 msgid "movie_output"
-msgstr ""
+msgstr "elokuvan lähtö"
 
-#: conf.c:3231
+#: src/conf.c
 msgid "movie_output_motion"
-msgstr ""
+msgstr "elokuvan lähtöliike"
 
-#: conf.c:3232
+#: src/conf.c
 msgid "movie_max_time"
-msgstr ""
+msgstr "elokuvan enimmäisaika"
 
-#: conf.c:3233
+#: src/conf.c
 msgid "movie_bps"
-msgstr ""
+msgstr "elokuvan bps"
 
-#: conf.c:3234
+#: src/conf.c
 msgid "movie_quality"
-msgstr ""
+msgstr "elokuvan laatu"
 
-#: conf.c:3235
+#: src/conf.c
 msgid "movie_codec"
-msgstr ""
+msgstr "elokuvakoodekki"
 
-#: conf.c:3236
+#: src/conf.c
 msgid "movie_duplicate_frames"
-msgstr ""
+msgstr "elokuvan kaksoiskappaleet"
 
-#: conf.c:3237
+#: src/conf.c
 msgid "movie_passthrough"
-msgstr ""
+msgstr "elokuvan passthrough"
 
-#: conf.c:3238
+#: src/conf.c
 msgid "movie_filename"
-msgstr ""
+msgstr "elokuvan tiedostonimi"
 
-#: conf.c:3239
+#: src/conf.c
 msgid "movie_extpipe_use"
-msgstr ""
+msgstr "elokuvan loppukäyttö"
 
-#: conf.c:3240
+#: src/conf.c
 msgid "movie_extpipe"
-msgstr ""
+msgstr "elokuvan loppu"
 
-#: conf.c:3241
+#: src/conf.c
 msgid "timelapse_interval"
-msgstr ""
+msgstr "Aikaväli"
 
-#: conf.c:3242
+#: src/conf.c
 msgid "timelapse_mode"
-msgstr ""
+msgstr "aikakatkaisutila"
 
-#: conf.c:3243
+#: src/conf.c
 msgid "timelapse_fps"
-msgstr ""
+msgstr "timelapse fps"
 
-#: conf.c:3244
+#: src/conf.c
 msgid "timelapse_codec"
-msgstr ""
+msgstr "timelapse-koodekki"
 
-#: conf.c:3245
+#: src/conf.c
 msgid "timelapse_filename"
-msgstr ""
+msgstr "timelapse-tiedostonimi"
 
-#: conf.c:3246
+#: src/conf.c
 msgid "video_pipe"
-msgstr ""
+msgstr "videoputki"
 
-#: conf.c:3247
+#: src/conf.c
 msgid "video_pipe_motion"
-msgstr ""
+msgstr "videoputken liike"
 
-#: conf.c:3248
+#: src/conf.c
 msgid "webcontrol_port"
-msgstr ""
+msgstr "web-ohjausportti"
 
-#: conf.c:3249
+#: src/conf.c
 msgid "webcontrol_ipv6"
-msgstr ""
+msgstr "webcontrol ipv6"
 
-#: conf.c:3250
+#: src/conf.c
 msgid "webcontrol_localhost"
-msgstr ""
+msgstr "webcontrol localhost"
 
-#: conf.c:3251
+#: src/conf.c
 msgid "webcontrol_parms"
-msgstr ""
+msgstr "verkkokontrolliparms"
 
-#: conf.c:3252
+#: src/conf.c
 msgid "webcontrol_interface"
-msgstr ""
+msgstr "web-käyttöliittymä"
 
-#: conf.c:3253
+#: src/conf.c
 msgid "webcontrol_auth_method"
-msgstr ""
+msgstr "webcontrol auth -menetelmä"
 
-#: conf.c:3254
+#: src/conf.c
 msgid "webcontrol_authentication"
-msgstr ""
+msgstr "webcontrol-todennus"
 
-#: conf.c:3255
+#: src/conf.c
 msgid "webcontrol_tls"
-msgstr ""
+msgstr "webcontrol tls"
 
-#: conf.c:3256
+#: src/conf.c
 msgid "webcontrol_cert"
-msgstr ""
+msgstr "webcontrol -sertifikaatti"
 
-#: conf.c:3257
+#: src/conf.c
 msgid "webcontrol_key"
-msgstr ""
+msgstr "web-avain"
 
-#: conf.c:3258
+#: src/conf.c
 msgid "webcontrol_cors_header"
-msgstr ""
+msgstr "web-ohjaimen korssiotsikko"
 
-#: conf.c:3259
+#: src/conf.c
 msgid "stream_port"
-msgstr ""
+msgstr "stream-portti"
 
-#: conf.c:3260
+#: src/conf.c
 msgid "stream_localhost"
-msgstr ""
+msgstr "stream localhost"
 
-#: conf.c:3261
+#: src/conf.c
 msgid "stream_auth_method"
-msgstr ""
+msgstr "stream auth -menetelmä"
 
-#: conf.c:3262
+#: src/conf.c
 msgid "stream_authentication"
-msgstr ""
+msgstr "suoratodennus"
 
-#: conf.c:3263
+#: src/conf.c
 msgid "stream_tls"
-msgstr ""
+msgstr "stream tls"
 
-#: conf.c:3264
+#: src/conf.c
 msgid "stream_cors_header"
-msgstr ""
+msgstr "stream korssi otsikko"
 
-#: conf.c:3265
+#: src/conf.c
 msgid "stream_preview_scale"
-msgstr ""
+msgstr "stream-esikatselukuva"
 
-#: conf.c:3266
+#: src/conf.c
 msgid "stream_preview_newline"
-msgstr ""
+msgstr "stream esikatselu newline"
 
-#: conf.c:3267
+#: src/conf.c
 msgid "stream_preview_method"
-msgstr ""
+msgstr "stream-esikatselutapa"
 
-#: conf.c:3268
+#: src/conf.c
 msgid "stream_quality"
-msgstr ""
+msgstr "streamin laatu"
 
-#: conf.c:3269
+#: src/conf.c
 msgid "stream_grey"
-msgstr ""
+msgstr "stream harmaa"
 
-#: conf.c:3270
+#: src/conf.c
 msgid "stream_motion"
-msgstr ""
+msgstr "stream motion"
 
-#: conf.c:3271
+#: src/conf.c
 msgid "stream_maxrate"
-msgstr ""
+msgstr "suoravirta maks"
 
-#: conf.c:3272
+#: src/conf.c
 msgid "stream_limit"
-msgstr ""
+msgstr "virtaraja"
 
-#: conf.c:3273
+#: src/conf.c
 msgid "database_type"
-msgstr ""
+msgstr "tietokantatyyppi"
 
-#: conf.c:3274
+#: src/conf.c
 msgid "database_dbname"
-msgstr ""
+msgstr "tietokannan dbname"
 
-#: conf.c:3275
+#: src/conf.c
 msgid "database_host"
-msgstr ""
+msgstr "tietokannan isäntä"
 
-#: conf.c:3276
+#: src/conf.c
 msgid "database_port"
-msgstr ""
+msgstr "tietokantaportti"
 
-#: conf.c:3277
+#: src/conf.c
 msgid "database_user"
-msgstr ""
+msgstr "tietokannan käyttäjä"
 
-#: conf.c:3278
+#: src/conf.c
 msgid "database_password"
-msgstr ""
+msgstr "tietokannan salasana"
 
-#: conf.c:3279
+#: src/conf.c
 msgid "database_busy_timeout"
-msgstr ""
+msgstr "tietokannan varattu aikakatkaisu"
 
-#: conf.c:3280
+#: src/conf.c
 msgid "sql_log_picture"
-msgstr ""
+msgstr "SQL lokikuva"
 
-#: conf.c:3281
+#: src/conf.c
 msgid "sql_log_snapshot"
-msgstr ""
+msgstr "SQL-lokin tilannekuva"
 
-#: conf.c:3282
+#: src/conf.c
 msgid "sql_log_movie"
-msgstr ""
+msgstr "SQL log -elokuva"
 
-#: conf.c:3283
+#: src/conf.c
 msgid "sql_log_timelapse"
-msgstr ""
+msgstr "SQL-lokien aikataulu"
 
-#: conf.c:3284
+#: src/conf.c
 msgid "sql_query_start"
-msgstr ""
+msgstr "SQL-kyselyn aloitus"
 
-#: conf.c:3285
+#: src/conf.c
 msgid "sql_query_stop"
-msgstr ""
+msgstr "SQL kysely lopettaa"
 
-#: conf.c:3286
+#: src/conf.c
 msgid "sql_query"
-msgstr ""
+msgstr "SQL-kysely"
 
-#: conf.c:3287
+#: src/conf.c
 msgid "track_type"
-msgstr ""
+msgstr "raidan tyyppi"
 
-#: conf.c:3288
+#: src/conf.c
 msgid "track_auto"
-msgstr ""
+msgstr "seurata auto"
 
-#: conf.c:3289
+#: src/conf.c
 msgid "track_port"
-msgstr ""
+msgstr "seurata porttia"
 
-#: conf.c:3290
+#: src/conf.c
 msgid "track_motorx"
-msgstr ""
+msgstr "seurata motorx"
 
-#: conf.c:3291
+#: src/conf.c
 msgid "track_motorx_reverse"
-msgstr ""
+msgstr "seurata moottorin taaksepäin"
 
-#: conf.c:3292
+#: src/conf.c
 msgid "track_motory"
-msgstr ""
+msgstr "radan motiivi"
 
-#: conf.c:3293
+#: src/conf.c
 msgid "track_motory_reverse"
-msgstr ""
+msgstr "radan motory reverse"
 
-#: conf.c:3294
+#: src/conf.c
 msgid "track_maxx"
-msgstr ""
+msgstr "seurata maxx"
 
-#: conf.c:3295
+#: src/conf.c
 msgid "track_minx"
-msgstr ""
+msgstr "seurata minx"
 
-#: conf.c:3296
+#: src/conf.c
 msgid "track_maxy"
-msgstr ""
+msgstr "seurata maxy"
 
-#: conf.c:3297
+#: src/conf.c
 msgid "track_miny"
-msgstr ""
+msgstr "seurata minia"
 
-#: conf.c:3298
+#: src/conf.c
 msgid "track_homex"
-msgstr ""
+msgstr "seurata homex"
 
-#: conf.c:3299
+#: src/conf.c
 msgid "track_homey"
-msgstr ""
+msgstr "seurata kodikas"
 
-#: conf.c:3300
+#: src/conf.c
 msgid "track_iomojo_id"
-msgstr ""
+msgstr "seurata iomojo id"
 
-#: conf.c:3301
+#: src/conf.c
 msgid "track_step_angle_x"
-msgstr ""
+msgstr "seurata askelkulmaa x"
 
-#: conf.c:3302
+#: src/conf.c
 msgid "track_step_angle_y"
-msgstr ""
+msgstr "seurata askelkulmaa y"
 
-#: conf.c:3303
+#: src/conf.c
 msgid "track_move_wait"
-msgstr ""
+msgstr "radan siirto odota"
 
-#: conf.c:3304
+#: src/conf.c
 msgid "track_speed"
-msgstr ""
+msgstr "radan nopeus"
 
-#: conf.c:3305
+#: src/conf.c
 msgid "track_stepsize"
-msgstr ""
+msgstr "seurata asteikkoa"
 
-#: conf.c:3306
+#: src/conf.c
 msgid "track_generic_move"
-msgstr ""
+msgstr "seurata yleistä liikettä"
 
-#: conf.c:3307
+#: src/conf.c
 msgid "camera"
-msgstr ""
+msgstr "kamera"
 
-#: conf.c:3308
+#: src/conf.c
 msgid "camera_dir"
-msgstr ""
+msgstr "kameraohjaus"
 
-#: event.c:89 track.c:1358
+#: src/event.c src/track.c
 #, c-format
 msgid "Unable to start external command '%s'"
-msgstr ""
+msgstr "Ulkoista komentoa ' %s' ei voida käynnistää"
 
-#: event.c:95 track.c:1365
+#: src/event.c src/track.c
 #, c-format
 msgid "Executing external command '%s'"
-msgstr ""
+msgstr "Suoritetaan ulkoinen komento ' %s'"
 
-#: event.c:108
+#: src/event.c
 #, c-format
 msgid "File of type %ld saved to: %s"
-msgstr ""
+msgstr "Tiedostotyyppi %ld tallennettu tiedostoon: %s"
 
-#: event.c:171
+#: src/event.c
+msgid "Ignoring empty sql query"
+msgstr "Tyhjän sql-kyselyn sivuuttaminen"
+
+#: src/event.c
+msgid "Executing mysql query"
+msgstr "Suoritetaan mysql-kyselyä"
+
+#: src/event.c
 #, c-format
 msgid "Mysql query failed %s error code %d"
-msgstr ""
+msgstr "Mysql-kysely epäonnistui %s virhekoodi %d"
 
-#: event.c:185
+#: src/event.c
 #, c-format
-msgid ""
-"Cannot reconnect to MySQL database %s on host %s with user %s MySQL error "
-"was %s"
+msgid "Cannot reconnect to MySQL database %s on host %s with user %s MySQL error was %s"
 msgstr ""
+"Isäntä %s: n MySQL-tietokantaan %s ei voida muodostaa yhteyttä käyttäjän %s MySQL -"
+"virheen kanssaoli %s"
 
-#: event.c:192
+#: src/event.c
 #, c-format
 msgid "Re-Connection to Mysql database '%s' Succeed"
-msgstr ""
+msgstr "Yhteyden muodostaminen uudelleen Mysql-tietokantaan ' %s' onnistuu"
 
-#: event.c:197
+#: src/event.c
 #, c-format
 msgid "after re-connection Mysql query failed %s error code %d"
-msgstr ""
+msgstr "uudelleenyhteyden jälkeen Mysql-kysely epäonnistui %s virhekoodi %d"
 
-#: event.c:219 motion.c:1113
+#: src/event.c
+msgid "Executing postgresql query"
+msgstr "Suoritetaan postgresql-kyselyä"
+
+#: src/event.c src/motion.c
 #, c-format
 msgid "Connection to PostgreSQL database '%s' failed: %s"
-msgstr ""
+msgstr "Yhteys PostgreSQL-tietokantaan ' %s' epäonnistui: %s"
 
-#: event.c:228
+#: src/event.c
 #, c-format
 msgid "Re-Connection to PostgreSQL database '%s' failed: %s"
-msgstr ""
+msgstr "Uudelleenyhteys PostgreSQL-tietokantaan ' %s' epäonnistui: %s"
 
-#: event.c:232
+#: src/event.c
 #, c-format
 msgid "Re-Connection to PostgreSQL database '%s' Succeed"
-msgstr ""
+msgstr "Uudelleenyhteys PostgreSQL-tietokantaan ' %s' onnistuu"
 
-#: event.c:255
+#: src/event.c
+#, c-format
+msgid "PGSQL query failed: [%s]  %s %s"
+msgstr "PGSQL-kysely epäonnistui: [%s] %s %s"
+
+#: src/event.c
+msgid "Executing sqlite query"
+msgstr "Suoritetaan sqlite-kysely"
+
+#: src/event.c
 #, c-format
 msgid "SQLite error was %s"
-msgstr ""
+msgstr "SQLite-virhe oli %s"
 
-#: event.c:482
+#: src/event.c
 msgid "Failed to put image into video pipe"
-msgstr ""
+msgstr "Kuvan sijoittaminen videoputkeen epäonnistui"
 
-#: event.c:606
+#: src/event.c
 #, c-format
 msgid "Could not create symbolic link [%s]"
-msgstr ""
+msgstr "Symbolista linkkiä ei voitu luoda [ %s]"
 
-#: event.c:741
+#: src/event.c
+#, c-format
+msgid "Error creating preview pipe name %d %s"
+msgstr "Esikatseluputken nimen %d %s luomisessa tapahtui virhe"
+
+#: src/event.c
+#, c-format
+msgid "Error creating file name base %d %s"
+msgstr "Virhe luotaessa tiedostokantaa %d %s"
+
+#: src/event.c
+#, c-format
+msgid "Error creating preview name %d %s"
+msgstr "Esikatselunimen %d %s luomisessa tapahtui virhe"
+
+#: src/event.c
 #, c-format
 msgid "CLOSING: extpipe file desc %d, error state %d"
-msgstr ""
+msgstr "SULJEMINEN: poistetaan tiedosto desc %d, virhetila %d"
 
-#: event.c:766
+#: src/event.c
+#, c-format
+msgid "pclose return: %d"
+msgstr "pclose tuotto: %d"
+
+#: src/event.c
 #, c-format
 msgid "moviepath: %s"
-msgstr ""
+msgstr "elokuvarata: %s"
 
-#: event.c:776
+#: src/event.c
 #, c-format
 msgid "no write access to target directory %s"
-msgstr ""
+msgstr "ei kirjoitusoikeutta kohdehakemistoon %s"
 
-#: event.c:781
+#: src/event.c
 #, c-format
 msgid "path not found, trying to create it %s ..."
-msgstr ""
+msgstr "polkua ei löydy, yritetään luoda sitä %s ..."
 
-#: event.c:787
+#: src/event.c
 #, c-format
 msgid "error accesing path %s"
-msgstr ""
+msgstr "virhe pääsypolulle %s"
 
-#: event.c:798
+#: src/event.c
+#, c-format
+msgid "Error specifying command line: %s"
+msgstr "Virhe määritettäessä komentorivi: %s"
+
+#: src/event.c
 #, c-format
 msgid "pipe: %s"
-msgstr ""
+msgstr "putki: %s"
 
-#: event.c:806
+#: src/event.c
+#, c-format
+msgid "cnt->moviefps: %d"
+msgstr "cnt->moviefps: %d"
+
+#: src/event.c
 msgid "popen failed"
-msgstr ""
+msgstr "popen epäonnistui"
 
-#: event.c:824
+#: src/event.c
 msgid "Using extpipe"
-msgstr ""
+msgstr "Extpipe-käyttö"
 
-#: event.c:831 event.c:835
+#: src/event.c
 #, c-format
 msgid "Error writing in pipe , state error %d"
-msgstr ""
+msgstr "Virhe kirjoitettaessa putkessa, tilavirhe %d"
 
-#: event.c:839
+#: src/event.c
 #, c-format
 msgid "pipe %s not created or closed already "
-msgstr ""
+msgstr "putkea %s ei ole luotu tai suljettu jo"
 
-#: event.c:854
+#: src/event.c
 #, c-format
 msgid "Source FPS %d"
-msgstr ""
+msgstr "Lähde FPS %d"
 
-#: event.c:984
+#: src/event.c
+msgid "The ogg container is no longer supported.  Changing to mpeg4"
+msgstr "Ogg-säilöä ei enää tueta. Vaihtaminen mpeg4: ksi"
+
+#: src/event.c
+msgid "Running test of the various output formats."
+msgstr "Eri tulostusmuotojen ajokoe."
+
+#: src/event.c
 msgid "Error opening context for movie output."
-msgstr ""
+msgstr "Virhe avaamalla konteksti elokuvalähdölle."
 
-#: event.c:1021
+#: src/event.c
 #, c-format
 msgid "ffopen_open error creating (motion) file [%s]"
-msgstr ""
+msgstr "ffopen avoin virhe luotaessa (liike) tiedosto [ %s]"
 
-#: event.c:1086
-msgid ""
-"The swf container for timelapse no longer supported.  Using mpg container."
-msgstr ""
+#: src/event.c
+msgid "The swf container for timelapse no longer supported.  Using mpg container."
+msgstr "Aikakatkaisun swf-säilöä ei enää tueta. Mpg-säilön käyttäminen."
 
-#: event.c:1089
+#: src/event.c
 msgid "Timelapse using mpg codec."
-msgstr ""
+msgstr "Aikaväli mpg-koodekin avulla."
 
-#: event.c:1090
+#: src/event.c
 msgid "Events will be appended to file"
-msgstr ""
+msgstr "Tapahtumat liitetään tiedostoon"
 
-#: event.c:1096
+#: src/event.c
 msgid "Timelapse using mpeg4 codec."
-msgstr ""
+msgstr "Aikaväli mpeg4-koodekin avulla."
 
-#: event.c:1097
+#: src/event.c
 msgid "Events will be trigger new files"
-msgstr ""
+msgstr "Tapahtumat laukaisevat uusia tiedostoja"
 
-#: event.c:1106
+#: src/event.c
 #, c-format
 msgid "ffopen_open error creating (timelapse) file [%s]"
-msgstr ""
+msgstr "ffopen avoin virhe luotaessa (timelapse) tiedosto [ %s]"
 
-#: event.c:1115 event.c:1127 event.c:1132
+#: src/event.c
 msgid "Error encoding image"
-msgstr ""
+msgstr "Virhe kuvan koodauksessa"
 
-#: ffmpeg.c:276
+#: src/ffmpeg.c
 msgid "Failed to allocate memory for codec name"
-msgstr ""
+msgstr "Muistin varaaminen koodekin nimelle epäonnistui"
 
-#: ffmpeg.c:288
+#: src/ffmpeg.c
 msgid ""
-"The frame rate specified is too high for the ffmpeg movie type specified. "
-"Choose a different ffmpeg container or lower framerate."
+"The frame rate specified is too high for the ffmpeg movie type specified. Choose a "
+"different ffmpeg container or lower framerate."
 msgstr ""
+"Määritetty ruudunopeus on liian korkea määritettyä ffmpeg-elokuvatyyppiä varten."
+"Valitse toinen ffmpeg-säilö tai alempi kehysnopeus."
 
-#: ffmpeg.c:301
+#: src/ffmpeg.c
+msgid "Error setting base file name"
+msgstr "Virhe perustiedoston nimen asettamisessa"
+
+#: src/ffmpeg.c
 #, c-format
-msgid "ffmpeg_video_codec option value %s is not supported"
-msgstr ""
+msgid "Error setting timelapse append for codec %s"
+msgstr "Virhe asetettaessa timelapse -liitettä koodekille %s"
 
-#: ffmpeg.c:364
+#: src/ffmpeg.c
+msgid "Error setting file name"
+msgstr "Virhe tiedostonimen asettamisessa"
+
+#: src/ffmpeg.c
 #, c-format
 msgid "codec option value %s is not supported"
-msgstr ""
+msgstr "koodekin vaihtoehdon arvoa %s ei tueta"
 
-#: ffmpeg.c:371
+#: src/ffmpeg.c
 msgid "Could not get the codec"
-msgstr ""
+msgstr "Koodekkia ei voitu saada"
 
-#: ffmpeg.c:392
+#: src/ffmpeg.c
 #, c-format
 msgid "Error sending frame for encoding:%s"
-msgstr ""
+msgstr "Virhe lähetyskehyksessä koodausta varten: %s"
 
-#: ffmpeg.c:400
+#: src/ffmpeg.c
 #, c-format
 msgid "Receive packet threw EAGAIN returning -2 code :%s"
-msgstr ""
+msgstr "Vastaanotettu paketti heitti EAGAIN: n palauttaen -2-koodin: %s"
 
-#: ffmpeg.c:407
+#: src/ffmpeg.c
 #, c-format
 msgid "Error receiving encoded packet video:%s"
-msgstr ""
+msgstr "Virhe vastaanotettaessa koodattua pakettivideota: %s"
 
-#: ffmpeg.c:423
+#: src/ffmpeg.c
 #, c-format
 msgid "Error encoding video:%s"
-msgstr ""
+msgstr "Virhe videon koodauksessa: %s"
 
-#: ffmpeg.c:446
+#: src/ffmpeg.c
 msgid "Error encoding video"
-msgstr ""
+msgstr "Virhe videon koodauksessa"
 
-#: ffmpeg.c:492
+#: src/ffmpeg.c
 #, c-format
 msgid "PTS %<PRId64> Base PTS %<PRId64> ms interval %<PRId64> timebase %d-%d"
-msgstr ""
+msgstr "PTS %<PRId64> perus PTS %<PRId64> ms-aika %<PRId64> aikabaasi %d- %d"
 
-#: ffmpeg.c:500 ffmpeg.c:538
+#: src/ffmpeg.c
 msgid "BAD TIMING!! Frame skipped."
-msgstr ""
+msgstr "HUONO AJOITUS!! Kehys ohitettu."
 
-#: ffmpeg.c:527
+#: src/ffmpeg.c
 #, c-format
-msgid ""
-"PTS %<PRId64> Base PTS %<PRId64> ms interval %<PRId64> timebase %d-%d Change "
-"%d"
-msgstr ""
+msgid "PTS %<PRId64> Base PTS %<PRId64> ms interval %<PRId64> timebase %d-%d Change %d"
+msgstr "PTS %<PRId64> perus PTS %<PRId64> ms-aika %<PRId64> aikabaasi %d- %d Muuta%d"
 
-#: ffmpeg.c:583
+#: src/ffmpeg.c
 #, c-format
 msgid "%s codec vbr/crf/bit_rate: %d"
-msgstr ""
+msgstr "%s koodekki vbr / crf / bittinopeus: %d"
 
-#: ffmpeg.c:620
+#: src/ffmpeg.c
 #, c-format
-msgid "Preferred codec %s has been blacklisted"
-msgstr ""
+msgid "Preferred codec %s has been blacklisted: %s"
+msgstr "Haluttu koodekki %s on mustassa listassa: %s"
 
-#: ffmpeg.c:628
+#: src/ffmpeg.c
 #, c-format
 msgid "Preferred codec %s not found"
-msgstr ""
+msgstr "Haluttua koodekkia %s ei löydy"
 
-#: ffmpeg.c:637
+#: src/ffmpeg.c
 #, c-format
 msgid "Codec %s not found"
-msgstr ""
+msgstr "Koodekki %s ei löytynyt"
 
-#: ffmpeg.c:642
+#: src/ffmpeg.c
 #, c-format
 msgid "Using codec %s"
-msgstr ""
+msgstr "Käytetään koodekkia %s"
 
-#: ffmpeg.c:648 ffmpeg.c:661 ffmpeg.c:1112 ffmpeg.c:1131
+#: src/ffmpeg.c
 msgid "Could not alloc stream"
-msgstr ""
+msgstr "Streamia ei voitu allokoida"
 
-#: ffmpeg.c:654
+#: src/ffmpeg.c
 msgid "Failed to allocate decoder!"
-msgstr ""
+msgstr "Dekooderin allokointi epäonnistui!"
 
-#: ffmpeg.c:715
+#: src/ffmpeg.c
+#, c-format
+msgid "Low fps. Encoding %d frames into a %d frames container."
+msgstr "Matala fps. %d-kehyksen koodaus %d-kehykseen."
+
+#: src/ffmpeg.c
 msgid "Unable to set quality"
-msgstr ""
+msgstr "Laatua ei voida asettaa"
 
-#: ffmpeg.c:725
+#: src/ffmpeg.c
 #, c-format
 msgid "Reported FPS Supported %d/%d"
-msgstr ""
+msgstr "Raportoitu FPS tuettu %d / %d"
 
-#: ffmpeg.c:737
+#: src/ffmpeg.c
 #, c-format
 msgid "Could not open codec %s"
-msgstr ""
+msgstr "Codec %s ei voitu avata"
 
-#: ffmpeg.c:759
+#: src/ffmpeg.c
 #, c-format
 msgid "Failed to copy decoder parameters!: %s"
-msgstr ""
+msgstr "Dekooderin parametrien kopiointi epäonnistui !: %s"
 
-#: ffmpeg.c:775
+#: src/ffmpeg.c
 msgid "could not alloc frame"
-msgstr ""
+msgstr "ei voitu allokoida kehystä"
 
-#: ffmpeg.c:816
+#: src/ffmpeg.c
+#, c-format
+msgid "could not alloc buffers %s"
+msgstr "puskureita %s ei voitu allokoida"
+
+#: src/ffmpeg.c
 #, c-format
 msgid "error opening file %s"
-msgstr ""
+msgstr "virhe avaamalla tiedosto %s"
 
-#: ffmpeg.c:823
+#: src/ffmpeg.c
 #, c-format
 msgid "Permission denied. %s"
-msgstr ""
+msgstr "Lupa kielletty. %s"
 
-#: ffmpeg.c:828
+#: src/ffmpeg.c
 #, c-format
 msgid "Error opening file %s"
-msgstr ""
+msgstr "Virhe tiedoston %s avaamisessa"
 
-#: ffmpeg.c:843
+#: src/ffmpeg.c
 #, c-format
 msgid "Could not write ffmpeg header %s"
-msgstr ""
+msgstr "Ffmpeg-otsikkoa %s ei voitu kirjoittaa"
 
-#: ffmpeg.c:878
+#: src/ffmpeg.c
 #, c-format
 msgid "Error entering draining mode:%s"
-msgstr ""
+msgstr "Virhe siirtyessään tyhjennystilaan: %s"
 
-#: ffmpeg.c:890
+#: src/ffmpeg.c
 #, c-format
 msgid "Error draining codec:%s"
-msgstr ""
+msgstr "Virhe tyhjennettäessä koodekkia: %s"
 
-#: ffmpeg.c:897
+#: src/ffmpeg.c
 msgid "Error writing draining video frame"
-msgstr ""
+msgstr "Virhe videon tyhjennyskuvaa kirjoitettaessa"
 
-#: ffmpeg.c:933
+#: src/ffmpeg.c
 msgid "Error while encoding picture"
-msgstr ""
+msgstr "Virhe kuvan koodauksessa"
 
-#: ffmpeg.c:947
+#: src/ffmpeg.c
 msgid "Error while writing video frame"
-msgstr ""
+msgstr "Virhe videokehystä kirjoitettaessa"
 
-#: ffmpeg.c:997
+#: src/ffmpeg.c
+#, c-format
+msgid "av_copy_packet: %s"
+msgstr "av_copy_packet: %s"
+
+#: src/ffmpeg.c
 #, c-format
 msgid "Error while writing video frame: %s"
-msgstr ""
+msgstr "Virhe videokehystä kirjoitettaessa: %s"
 
-#: ffmpeg.c:1079
+#: src/ffmpeg.c
 msgid "RTSP context not available."
-msgstr ""
+msgstr "RTSP-konteksti ei ole käytettävissä."
 
-#: ffmpeg.c:1088
+#: src/ffmpeg.c
 msgid "rtsp camera not ready for pass-through."
-msgstr ""
+msgstr "rtsp-kamera ei ole valmis läpikulkua varten."
 
-#: ffmpeg.c:1095
+#: src/ffmpeg.c
 msgid "pass-through mode enabled.  Changing to MP4 container."
-msgstr ""
+msgstr "läpivientitila käytössä. Vaihtaminen MP4-säilöön."
 
-#: ffmpeg.c:1101 ffmpeg.c:1276
+#: src/ffmpeg.c
 msgid "Could not get codec!"
-msgstr ""
+msgstr "Koodekkia ei voitu saada!"
 
-#: ffmpeg.c:1119 ffmpeg.c:1138 netcam_rtsp.c:1061 netcam_rtsp.c:1082
+#: src/ffmpeg.c src/netcam_rtsp.c
 msgid "Unable to copy codec parameters"
-msgstr ""
+msgstr "Koodekkiparametreja ei voi kopioida"
 
-#: ffmpeg.c:1147
+#: src/ffmpeg.c
 msgid "Pass-through disabled.  ffmpeg too old"
-msgstr ""
+msgstr "Läpäisy estetty. ffmpeg liian vanha"
 
-#: ffmpeg.c:1194
+#: src/ffmpeg.c
+msgid "Pass-through stream opened"
+msgstr "Läpivirta avattiin"
+
+#: src/ffmpeg.c
 #, c-format
 msgid "ffmpeg libavcodec version %d.%d.%d libavformat version %d.%d.%d"
-msgstr ""
+msgstr "ffmpeg libavcodec-versio %d. %d. %d libavformat-versio %d. %d. %d"
 
-#: ffmpeg.c:1216
+#: src/ffmpeg.c
 #, c-format
 msgid "av_lockmgr_register failed (%d)"
-msgstr ""
+msgstr "av lockmgr -rekisteröinti epäonnistui ( %d)"
 
-#: ffmpeg.c:1223 ffmpeg.c:1245 ffmpeg.c:1313
+#: src/ffmpeg.c
 msgid "No ffmpeg functionality included"
-msgstr ""
+msgstr "Ei ffmpeg-toimintoa mukana"
 
-#: ffmpeg.c:1238
+#: src/ffmpeg.c
 msgid "av_lockmgr_register reset failed on cleanup"
-msgstr ""
+msgstr "av lockmgr -rekisterin nollaus epäonnistui puhdistuksen yhteydessä"
 
-#: ffmpeg.c:1258
+#: src/ffmpeg.c
 msgid "Could not allocate output context"
-msgstr ""
+msgstr "Tulostekontekstia ei voitu allokoida"
 
-#: ffmpeg.c:1266
+#: src/ffmpeg.c
 msgid "Could not setup passthru!"
-msgstr ""
+msgstr "Passthrun asennus epäonnistui!"
 
-#: ffmpeg.c:1283
+#: src/ffmpeg.c
 msgid "Failed to allocate codec!"
-msgstr ""
+msgstr "Koodekin allokointi epäonnistui!"
 
-#: ffmpeg.c:1289 ffmpeg.c:1295 ffmpeg.c:1304
+#: src/ffmpeg.c
 msgid "Could not set the stream"
-msgstr ""
+msgstr "Streamia ei voitu asettaa"
 
-#: ffmpeg.c:1327
+#: src/ffmpeg.c
 msgid "Error flushing codec"
-msgstr ""
+msgstr "Virhe huuhtelemalla koodekkia"
 
-#: ffmpeg.c:1391
+#: src/ffmpeg.c
 msgid "Excessive attempts to clear buffered packet"
-msgstr ""
+msgstr "Liialliset yritykset puskuroidun paketin tyhjentämiseksi"
 
-#: ffmpeg.c:1398
+#: src/ffmpeg.c
 msgid "Buffered packet"
-msgstr ""
+msgstr "Puskuroitu paketti"
 
-#: ffmpeg.c:1406 ffmpeg.c:1424
+#: src/ffmpeg.c
 msgid "No ffmpeg support"
-msgstr ""
+msgstr "Ei ffmpeg-tukea"
 
-#: jpegutils.c:94
+#: src/jpegutils.c
 #, c-format
 msgid "%s: Given jpeg buffer was too small"
-msgstr ""
+msgstr "%s: Annettu jpeg-puskuri oli liian pieni"
 
-#: jpegutils.c:380
+#: src/jpegutils.c
 msgid "Invalid JPEG image dimensions"
-msgstr ""
+msgstr "Virheelliset JPEG-kuvan mitat"
 
-#: jpegutils.c:387 netcam_jpeg.c:354
+#: src/jpegutils.c src/netcam_jpeg.c
 #, c-format
 msgid "JPEG image size %dx%d, JPEG was %dx%d"
-msgstr ""
+msgstr "JPEG-kuvan koko %dx %d, JPEG oli %dx %d"
 
-#: mmalcam.c:68
+#: src/mmalcam.c
 #, c-format
 msgid "Received unexpected camera control callback event, 0x%08x"
-msgstr ""
+msgstr "Vastaanotettu odottamaton kameran ohjauksen takaisinsoitto-tapahtuma, 0x %08x"
 
-#: mmalcam.c:99
+#: src/mmalcam.c
 msgid "A high frame rate can cause problems with exposure of images"
-msgstr ""
+msgstr "Suuri kuvanopeus voi aiheuttaa ongelmia kuvien valotuksessa"
 
-#: mmalcam.c:100
+#: src/mmalcam.c
 msgid "If autoexposure is not working, try a lower frame rate."
-msgstr ""
+msgstr "Jos automaattinen valotus ei toimi, kokeile pienempää kuvanopeutta."
 
-#: mmalcam.c:114
+#: src/mmalcam.c
 #, c-format
 msgid "Failed to create MMAL camera component %s"
-msgstr ""
+msgstr "MMAL-kamerakomponentin luominen epäonnistui %s"
 
-#: mmalcam.c:120
+#: src/mmalcam.c
 #, c-format
 msgid "MMAL camera %s doesn't have output ports"
-msgstr ""
+msgstr "MMAL-kameralla %s ei ole lähtöportteja"
 
-#: mmalcam.c:130
+#: src/mmalcam.c
 #, c-format
 msgid "Unable to enable control port : error %d"
-msgstr ""
+msgstr "Ohjausporttia ei voi ottaa käyttöön: virhe %d"
 
-#: mmalcam.c:159
+#: src/mmalcam.c
 msgid "MMAL no-padding setup failed"
-msgstr ""
+msgstr "MMAL no-poltin asennus epäonnistui"
 
-#: mmalcam.c:165
+#: src/mmalcam.c
 msgid "camera video format couldn't be set"
-msgstr ""
+msgstr "kameran videoformaattia ei voitu asettaa"
 
-#: mmalcam.c:177
+#: src/mmalcam.c
 msgid "camera component couldn't be enabled"
-msgstr ""
+msgstr "kamerakomponenttia ei voitu ottaa käyttöön"
 
-#: mmalcam.c:185
+#: src/mmalcam.c
 msgid "MMAL camera component created"
-msgstr ""
+msgstr "MMAL-kamerakomponentti luotu"
 
-#: mmalcam.c:209
+#: src/mmalcam.c
 msgid "MMAL camera buffer pool creation failed"
-msgstr ""
+msgstr "MMAL-kameran puskurialtaan luominen epäonnistui"
 
-#: mmalcam.c:215
+#: src/mmalcam.c
 msgid "MMAL camera buffer queue creation failed"
-msgstr ""
+msgstr "MMAL-kamerapuskurijonojen luonti epäonnistui"
 
-#: mmalcam.c:231
+#: src/mmalcam.c
 #, c-format
 msgid "Unable to get a required buffer %d from pool queue"
-msgstr ""
+msgstr "Vaadittua puskuria %d ei voida saada poolijonoon"
 
-#: mmalcam.c:236
+#: src/mmalcam.c
 #, c-format
 msgid "Unable to send a buffer to port (%d)"
-msgstr ""
+msgstr "Puskuria ei voi lähettää porttiin ( %d)"
 
-#: mmalcam.c:282
+#: src/mmalcam.c
 #, c-format
 msgid "MMAL Camera thread starting... for camera (%s) of %d x %d at %d fps"
-msgstr ""
+msgstr "MMAL Kameralanka alkaa ... kameralle ( %s) %dx %d nopeudella %d fps"
 
-#: mmalcam.c:287
+#: src/mmalcam.c
 msgid "camera params couldn't be allocated"
-msgstr ""
+msgstr "kameraparameareja ei voitu allokoida"
 
-#: mmalcam.c:313
+#: src/mmalcam.c
 msgid "MMAL camera capture port enabling failed"
-msgstr ""
+msgstr "MMAL-kameran sieppausportti ei ole onnistunut"
 
-#: mmalcam.c:321
+#: src/mmalcam.c
 msgid "MMAL camera capture start failed"
-msgstr ""
+msgstr "MMAL-kameran sieppauksen aloitus epäonnistui"
 
-#: mmalcam.c:351
+#: src/mmalcam.c
 msgid "MMAL Camera cleanup"
-msgstr ""
+msgstr "MMAL-kameran puhdistus"
 
-#: mmalcam.c:400
+#: src/mmalcam.c
 #, c-format
 msgid "cmd %d flags %08x size %d/%d at %08x, img_size=%d"
-msgstr ""
+msgstr "cmd %d liput %08x koko %d / %d %08x, img size = %d"
 
-#: mmalcam.c:417
+#: src/mmalcam.c
 msgid "Unable to return a buffer to the camera video port"
-msgstr ""
+msgstr "Puskuria ei voida palauttaa kameran videoporttiin"
 
-#: motion.c:105
+#: src/motion.c
 #, c-format
 msgid "Resizing pre_capture buffer to %d items"
-msgstr ""
+msgstr "Esikaappauspuskurin koon muuttaminen %d kohteeksi"
 
-#: motion.c:457
+#: src/motion.c
 msgid "Removed process id file (pid file)."
-msgstr ""
+msgstr "Poistettu prosessin id-tiedosto (pid-tiedosto)."
 
-#: motion.c:459
+#: src/motion.c
 msgid "Error removing pid file"
-msgstr ""
+msgstr "PID-tiedoston poistamisessa tapahtui virhe"
 
-#: motion.c:463
+#: src/motion.c
 #, c-format
 msgid "Closing logfile (%s)."
-msgstr ""
+msgstr "Lokitiedoston sulkeminen ( %s)."
 
-#: motion.c:541
+#: src/motion.c
 #, c-format
 msgid "Motion detected - starting event %d"
-msgstr ""
+msgstr "Liike havaittu - aloitustapahtuma %d"
 
-#: motion.c:661
+#: src/motion.c
 #, c-format
 msgid "Added %d fillerframes into movie"
-msgstr ""
+msgstr "Lisätty %d täytekehystä elokuvaan"
 
-#: motion.c:768
+#: src/motion.c
 msgid "Unable to determine camera type (MMAL, Netcam, V4L2, BKTR)"
-msgstr ""
+msgstr "Kameratyyppiä ei voida määrittää (MMAL, Netcam, V4L2, BKTR)"
 
-#: motion.c:793
+#: src/motion.c
 msgid "Opening privacy mask file"
-msgstr ""
+msgstr "Yksityisyysmaskitiedoston avaaminen"
 
-#: motion.c:805
+#: src/motion.c
 msgid "Opening high resolution privacy mask file"
-msgstr ""
+msgstr "Korkean resoluution yksityisyysmaskitiedoston avaaminen"
 
-#: motion.c:814 motion.c:1440
+#: src/motion.c
 #, c-format
 msgid "Error opening mask file %s"
-msgstr ""
+msgstr "Virhe avaamalla maskitiedosto %s"
 
-#: motion.c:821
+#: src/motion.c
 msgid "Failed to read mask privacy image. Mask privacy feature disabled."
 msgstr ""
+"Maskin tietosuojakuvan lukeminen epäonnistui. Naamion yksityisyysominaisuus poistettu "
+"käytöstä."
 
-#: motion.c:824
+#: src/motion.c
 #, c-format
 msgid "Mask privacy file \"%s\" loaded."
-msgstr ""
+msgstr "Naamio tietosuojatiedosto \" %s \" ladattu."
 
-#: motion.c:893 motion.c:900
+#: src/motion.c
 #, c-format
 msgid "Invalid text scale.  Adjusted to %d"
-msgstr ""
+msgstr "Virheellinen tekstiasteikko. Oikaistu %d: ksi"
 
-#: motion.c:969
+#: src/motion.c
 msgid "Closing MYSQL"
-msgstr ""
+msgstr "MYSQL: n sulkeminen"
 
-#: motion.c:977
+#: src/motion.c
 msgid "Initializing database"
-msgstr ""
+msgstr "Tietokannan alustaminen"
 
-#: motion.c:993 motion.c:1069
+#: src/motion.c
 #, c-format
 msgid "SQLite3 Database filename %s"
-msgstr ""
+msgstr "SQLite3-tietokantatiedostonimi %s"
 
-#: motion.c:998
+#: src/motion.c
 msgid "SQLite3 is threadsafe"
-msgstr ""
+msgstr "SQLite3 on langaton"
 
-#: motion.c:999
+#: src/motion.c
 #, c-format
 msgid "SQLite3 serialized %s"
-msgstr ""
+msgstr "SQLite3 sarjanumeroitu %s"
 
-#: motion.c:1000
+#: src/motion.c
 msgid "FAILED"
-msgstr ""
+msgstr "FAILED"
 
-#: motion.c:1000
+#: src/motion.c
 msgid "SUCCESS"
-msgstr ""
+msgstr "MENESTYS"
 
-#: motion.c:1003 motion.c:1072
+#: src/motion.c
 #, c-format
 msgid "Can't open database %s : %s"
-msgstr ""
+msgstr "Tietokantaa %s ei voi avata: %s"
 
-#: motion.c:1009 motion.c:1078
+#: src/motion.c
 #, c-format
 msgid "database_busy_timeout %d msec"
-msgstr ""
+msgstr "tietokannan varattu aikakatkaisu %d ms"
 
-#: motion.c:1012 motion.c:1081
+#: src/motion.c
 #, c-format
 msgid "database_busy_timeout failed %s"
-msgstr ""
+msgstr "tietokannan varattu aikakatkaisu epäonnistui %s"
 
-#: motion.c:1041
+#: src/motion.c
 #, c-format
 msgid "Cannot connect to MySQL database %s on host %s with user %s"
 msgstr ""
+"Isäntä %s -sovelluksessa ei voi muodostaa yhteyttä MySQL-tietokantaan %s käyttäjän %s "
+"kanssa"
 
-#: motion.c:1045
+#: src/motion.c
 #, c-format
 msgid "MySQL error was %s"
-msgstr ""
+msgstr "MySQL-virhe oli %s"
 
-#: motion.c:1064
+#: src/motion.c
 msgid "SQLite3 using shared handle"
-msgstr ""
+msgstr "SQLite3 jaettua kahvaa käyttämällä"
 
-#: motion.c:1130
+#: src/motion.c
 #, c-format
 msgid "Database backend %s"
-msgstr ""
+msgstr "Tietokannan taustaohjelma %s"
 
-#: motion.c:1239
+#: src/motion.c
 #, c-format
 msgid "Camera %d started: motion detection %s"
-msgstr ""
+msgstr "Kamera %d aloitettu: liiketunnistus %s"
 
-#: motion.c:1240 motion.c:1496
+#: src/motion.c
 msgid "Disabled"
-msgstr ""
+msgstr "Liikuntarajoitteinen"
 
-#: motion.c:1240 motion.c:1496
+#: src/motion.c
 msgid "Enabled"
-msgstr ""
+msgstr "käytössä"
 
-#: motion.c:1249
+#: src/motion.c
 msgid "Pass-through processing disabled."
-msgstr ""
+msgstr "Läpivientikäsittely on poistettu käytöstä."
 
-#: motion.c:1255
+#: src/motion.c
 #, c-format
 msgid "Invalid configuration dimensions %dx%d"
-msgstr ""
+msgstr "Virheelliset kokoonpanon mitat %dx %d"
 
-#: motion.c:1259
+#: src/motion.c
 #, c-format
 msgid "Using default dimensions %dx%d"
-msgstr ""
+msgstr "Oletusmittojen %dx %d käyttäminen"
 
-#: motion.c:1263 netcam_rtsp.c:1025
+#: src/motion.c src/netcam_rtsp.c
 #, c-format
 msgid "Image width (%d) requested is not modulo 8."
-msgstr ""
+msgstr "Pyydetty kuvan leveys ( %d) ei ole modulo 8."
 
-#: motion.c:1266 netcam_rtsp.c:1028
+#: src/motion.c src/netcam_rtsp.c
 #, c-format
 msgid "Adjusting width to next higher multiple of 8 (%d)."
-msgstr ""
+msgstr "Säädetään leveys seuraavaan suurempaan 8: n kerrannaiseen ( %d)."
 
-#: motion.c:1270 netcam_rtsp.c:1032
+#: src/motion.c src/netcam_rtsp.c
 #, c-format
 msgid "Image height (%d) requested is not modulo 8."
-msgstr ""
+msgstr "Pyydetty kuvan korkeus ( %d) ei ole modulo 8."
 
-#: motion.c:1273 netcam_rtsp.c:1035
+#: src/motion.c src/netcam_rtsp.c
 #, c-format
 msgid "Adjusting height to next higher multiple of 8 (%d)."
-msgstr ""
+msgstr "Säädetään korkeus seuraavaan suurempaan 8: n kerrannaiseen ( %d)."
 
-#: motion.c:1288 motion.c:1297
+#: src/motion.c
 msgid "Could not fetch initial image from camera "
-msgstr ""
+msgstr "Alkukuvaa ei voitu noutaa kamerasta"
 
-#: motion.c:1290
+#: src/motion.c
 msgid "Motion continues using width and height from config file(s)"
-msgstr ""
+msgstr "Liike jatkaa leveyden ja korkeuden käyttöä konfigurointitiedostoista"
 
-#: motion.c:1299
+#: src/motion.c
 msgid "Motion only supports width and height modulo 8"
-msgstr ""
+msgstr "Liike tukee vain leveyttä ja korkeutta modulo 8"
 
-#: motion.c:1305 motion.c:1967
+#: src/motion.c
 #, c-format
 msgid "Image width (%d) or height(%d) requested is not modulo 8."
-msgstr ""
+msgstr "Pyydetty kuvan leveys ( %d) tai korkeus ( %d) ei ole modulo 8."
 
-#: motion.c:1312 motion.c:1974
+#: src/motion.c
 #, c-format
 msgid "Motion only supports width and height greater than or equal to 64 %dx%d"
-msgstr ""
+msgstr "Liike tukee vain leveyttä ja korkeutta, joka on vähintään 64 %dx %d"
 
-#: motion.c:1353
+#: src/motion.c
+msgid "Substream not available.  Image sizes not modulo 16."
+msgstr "Substream ei ole käytettävissä. Kuvakoko ei modulo 16."
+
+#: src/motion.c
 msgid "webp image format is not available, failing back to jpeg"
 msgstr ""
+"webp-kuvatiedostomuoto ei ole käytettävissä, jpeg-tiedostoon palaaminen epäonnistui"
 
-#: motion.c:1387
+#: src/motion.c
 msgid "Error capturing first image"
-msgstr ""
+msgstr "Virhe ensimmäisen kuvan kaappaamisessa"
 
-#: motion.c:1398
+#: src/motion.c
 msgid "Opening video loopback device for normal pictures"
-msgstr ""
+msgstr "Videosilmukkalaitteen avaaminen normaalille kuvalle"
 
-#: motion.c:1405
+#: src/motion.c
 msgid "Failed to open video loopback for normal pictures"
-msgstr ""
+msgstr "Normaalien kuvien videosilmukka ei avautunut"
 
-#: motion.c:1412
+#: src/motion.c
 msgid "Opening video loopback device for motion pictures"
-msgstr ""
+msgstr "Videosilmukkalaitteen avaaminen elokuvia varten"
 
-#: motion.c:1419
+#: src/motion.c
 msgid "Failed to open video loopback for motion pictures"
-msgstr ""
+msgstr "Elokuvien videon silmukan palautus epäonnistui"
 
-#: motion.c:1451
+#: src/motion.c
 msgid "Failed to read mask image. Mask feature disabled."
-msgstr ""
+msgstr "Maskikuvan lukeminen epäonnistui. Naamioominaisuus poistettu käytöstä."
 
-#: motion.c:1454
+#: src/motion.c
 #, c-format
 msgid "Maskfile \"%s\" loaded."
-msgstr ""
+msgstr "Maskotiedosto \" %s \" ladattu."
 
-#: motion.c:1488
+#: src/motion.c
 #, c-format
 msgid "Problem enabling motion-stream server in port %d"
-msgstr ""
+msgstr "Ongelma liikevirtapalvelimen sallimisessa portissa %d"
 
-#: motion.c:1494
+#: src/motion.c
 #, c-format
 msgid "Started motion-stream server on port %d (auth %s)"
-msgstr ""
+msgstr "Aloitettu liikevirtapalvelin portissa %d (auth %s)"
 
-#: motion.c:1580
+#: src/motion.c
 msgid "Emulating motion"
-msgstr ""
+msgstr "Jäljittelevä liike"
 
-#: motion.c:1612
+#: src/motion.c
 msgid "Calling vid_close() from motion_cleanup"
-msgstr ""
+msgstr "Soittaminen vid close () liikkeen puhdistuksesta"
 
-#: motion.c:1797
+#: src/motion.c
 #, c-format
 msgid "Motion in area %d detected."
-msgstr ""
+msgstr "Alueella %d havaittu liike."
 
-#: motion.c:1958
+#: src/motion.c
 msgid "Retrying until successful connection with camera"
-msgstr ""
+msgstr "Yritä uudelleen, kunnes onnistunut yhteys kameraan"
 
-#: motion.c:1984
+#: src/motion.c
 msgid ""
 "Camera has finally become available\n"
-"Camera image has different width and heightfrom what is in the config file. "
-"You should fix that\n"
-"Restarting Motion thread to reinitialize all image buffers to new picture "
-"dimensions"
+"Camera image has different width and heightfrom what is in the config file. You "
+"should fix that\n"
+"Restarting Motion thread to reinitialize all image buffers to new picture dimensions"
 msgstr ""
+"Kamera on vihdoin tullut saataville \n"
+"Kameran kuvan leveys ja korkeus ovat erilaiset kuin konfiguraatiotiedostossa.Sinun "
+"tulisi korjata se \n"
+"Liikelangan käynnistäminen uudelleen kaikkien kuvapuskurien alustamiseksi uuteen "
+"kuvaanmitat"
 
-#: motion.c:2037
+#: src/motion.c
 msgid "Video signal re-acquired"
-msgstr ""
+msgstr "Videosignaali hankittiin uudelleen"
 
-#: motion.c:2065
+#: src/motion.c
 msgid "Video device fatal error - Closing video device"
-msgstr ""
+msgstr "Videolaitteen kohtalokas virhe - videolaitteen sulkeminen"
 
-#: motion.c:2093
+#: src/motion.c
 msgid "Restarting Motion thread to reinitialize all image buffers"
-msgstr ""
+msgstr "Käynnistä Motion-ketju uudelleen kaikkien kuvapuskurien uudelleenalustamiseksi"
 
-#: motion.c:2143
+#: src/motion.c
 msgid "Video signal lost - Adding grey image"
-msgstr ""
+msgstr "Videosignaali menetetty - Harmaan kuvan lisääminen"
 
-#: motion.c:2155
+#: src/motion.c
 msgid "Video signal still lost - Trying to close video device"
-msgstr ""
+msgstr "Videosignaali edelleen menetetty - Yritetään sulkea videolaite"
 
-#: motion.c:2200
+#: src/motion.c
 msgid "Lightswitch detected"
-msgstr ""
+msgstr "Valokytkin havaittu"
 
-#: motion.c:2232
+#: src/motion.c
 msgid "Switchfilter detected"
-msgstr ""
+msgstr "Kytkinsuodatin havaittu"
 
-#: motion.c:2345
+#: src/motion.c
 msgid "micro-lightswitch!"
-msgstr ""
+msgstr "mikro-LightSwitch!"
 
-#: motion.c:2569
+#: src/motion.c
 #, c-format
 msgid "End of event %d"
-msgstr ""
+msgstr "Tapahtuman loppu %d"
 
-#: motion.c:2604
+#: src/motion.c
 #, c-format
 msgid "Raw changes: %5d - changes after '%s': %5d"
-msgstr ""
+msgstr "Raaka muutokset: %5d - muutokset ' %s': n jälkeen: %5d"
 
-#: motion.c:2608
+#: src/motion.c
 #, c-format
 msgid " - labels: %3d"
-msgstr ""
+msgstr "- tarrat: %3d"
 
-#: motion.c:2612
+#: src/motion.c
 #, c-format
 msgid "Changes: %5d"
-msgstr ""
+msgstr "Muutokset: %5d"
 
-#: motion.c:2617
+#: src/motion.c
 #, c-format
 msgid " - noise level: %2d"
-msgstr ""
+msgstr "- melutaso: %2d"
 
-#: motion.c:2622
+#: src/motion.c
 #, c-format
 msgid " - threshold: %d"
-msgstr ""
+msgstr "- kynnys: %d"
 
-#: motion.c:2700
+#: src/motion.c
 #, c-format
 msgid "Invalid timelapse_mode argument '%s'"
-msgstr ""
+msgstr "Virheellinen timelapse-moodin argumentti ' %s'"
 
-#: motion.c:2702
+#: src/motion.c
 msgid "%:s Defaulting to manual timelapse mode"
-msgstr ""
+msgstr "%: s Oletusarvo manuaaliseen timelapse-tilaan"
 
-#: motion.c:2923
+#: src/motion.c
 msgid "Thread exiting"
-msgstr ""
+msgstr "Ketju poistuu"
 
-#: motion.c:2969
+#: src/motion.c
 msgid "Motion going to daemon mode"
-msgstr ""
+msgstr "Liike menee daemon-tilaan"
 
-#: motion.c:2987
+#: src/motion.c
 #, c-format
 msgid "Exit motion, cannot create process id file (pid file) %s"
-msgstr ""
+msgstr "Lopeta liike, ei voi luoda prosessin id-tiedostoa (pid-tiedosto) %s"
 
-#: motion.c:3000
+#: src/motion.c
 msgid "Could not change directory"
-msgstr ""
+msgstr "Hakemistoa ei voitu muuttaa"
 
-#: motion.c:3034
+#: src/motion.c
 #, c-format
 msgid "Created process id file %s. Process ID is %d"
-msgstr ""
+msgstr "Luotu prosessin tunnistiedosto %s. Prosessin tunnus on %d"
 
-#: motion.c:3119
+#: src/motion.c
 msgid ""
-"Camara IDs are not unique or have values over 32,000.  Falling back to "
-"thread numbers"
+"Camara IDs are not unique or have values over 32,000.  Falling back to thread numbers"
 msgstr ""
+"Camara-tunnukset eivät ole ainutlaatuisia tai niiden arvo on yli 32 000. Palaa "
+"takaisinsäie numeroita"
 
-#: motion.c:3160
+#: src/motion.c
+msgid "v4l2   : available"
+msgstr "v4l2: saatavana"
+
+#: src/motion.c
+msgid "v4l2   : not available"
+msgstr "v4l2: ei saatavilla"
+
+#: src/motion.c
+msgid "bktr   : available"
+msgstr "bktr: saatavana"
+
+#: src/motion.c
+msgid "bktr   : not available"
+msgstr "bktr: ei saatavilla"
+
+#: src/motion.c
+msgid "webp   : available"
+msgstr "webp: saatavana"
+
+#: src/motion.c
+msgid "webp   : not available"
+msgstr "webp: ei saatavilla"
+
+#: src/motion.c
+msgid "mmal   : available"
+msgstr "mmal: saatavana"
+
+#: src/motion.c
+msgid "mmal   : not available"
+msgstr "mmal: ei saatavilla"
+
+#: src/motion.c
+msgid "ffmpeg : available"
+msgstr "ffmpeg: saatavana"
+
+#: src/motion.c
+msgid "ffmpeg : not available"
+msgstr "ffmpeg: ei saatavilla"
+
+#: src/motion.c
+msgid "mysql  : available"
+msgstr "mysql: saatavana"
+
+#: src/motion.c
+msgid "mysql  : not available"
+msgstr "mysql: ei saatavilla"
+
+#: src/motion.c
+msgid "MariaDB: available"
+msgstr "MariaDB: saatavana"
+
+#: src/motion.c
+msgid "MariaDB: not available"
+msgstr "MariaDB: ei saatavilla"
+
+#: src/motion.c
+msgid "sqlite3: available"
+msgstr "sqlite3: saatavana"
+
+#: src/motion.c
+msgid "sqlite3: not available"
+msgstr "sqlite3: ei saatavilla"
+
+#: src/motion.c
+msgid "pgsql  : available"
+msgstr "pgsql: saatavana"
+
+#: src/motion.c
+msgid "pgsql  : not available"
+msgstr "pgsql: ei saatavilla"
+
+#: src/motion.c
+msgid "nls    : available"
+msgstr "Nls: saatavana"
+
+#: src/motion.c
+msgid "nls    : not available"
+msgstr "nls: ei saatavilla"
+
+#: src/motion.c
 #, c-format
 msgid "Using default log level (%s) (%d)"
-msgstr ""
+msgstr "Oletusloki-tason käyttäminen ( %s) ( %d)"
 
-#: motion.c:3175
+#: src/motion.c
 #, c-format
 msgid "Logging to file (%s)"
-msgstr ""
+msgstr "Kirjataan tiedostoon ( %s)"
 
-#: motion.c:3179
+#: src/motion.c
 #, c-format
 msgid "Exit motion, cannot create log file %s"
-msgstr ""
+msgstr "Poistu liikkeestä, lokitiedostoa %s ei voi luoda"
 
-#: motion.c:3184
+#: src/motion.c
 msgid "Logging to syslog"
-msgstr ""
+msgstr "Kirjautuminen lokiin"
 
-#: motion.c:3193
+#: src/motion.c
+#, c-format
+msgid "Motion %s Started"
+msgstr "Liike %s aloitettu"
+
+#: src/motion.c
 #, c-format
 msgid "Using default log type (%s)"
-msgstr ""
+msgstr "Oletuslokin tyypin käyttäminen ( %s)"
 
-#: motion.c:3197
+#: src/motion.c
 #, c-format
 msgid "Using log type (%s) log level (%s)"
-msgstr ""
+msgstr "Lokityypin ( %s) lokitason käyttäminen ( %s)"
 
-#: motion.c:3211
+#: src/motion.c
 msgid "Motion running as daemon process"
-msgstr ""
+msgstr "Liike käynnissä daemon-prosessina"
 
-#: motion.c:3216
+#: src/motion.c
 msgid "Motion running in setup mode."
-msgstr ""
+msgstr "Liike käynnissä asetustilassa."
 
-#: motion.c:3249
+#: src/motion.c
 #, c-format
 msgid "Camera ID: %d is from %s"
-msgstr ""
+msgstr "Kameran tunnus: %d on lähtökohdasta %s"
 
-#: motion.c:3255
+#: src/motion.c
 #, c-format
 msgid "Camera ID: %d Camera Name: %s Service: %s"
-msgstr ""
+msgstr "Kameran tunnus: %d Kameran nimi: %s Palvelu: %s"
 
-#: motion.c:3257
-#, c-format
-msgid "Stream port %d"
-msgstr ""
-
-#: motion.c:3260
+#: src/motion.c
 #, c-format
 msgid "Camera ID: %d Camera Name: %s Device: %s"
-msgstr ""
+msgstr "Kameran tunnus: %d Kameran nimi: %s Laite: %s"
 
-#: motion.c:3276
+#: src/motion.c
 #, c-format
 msgid "Stream port number %d for thread %d conflicts with the control port"
-msgstr ""
+msgstr "Suoratoiston portin numero %d lankalle %d on ristiriidassa ohjausportin kanssa"
 
-#: motion.c:3279 motion.c:3292
+#: src/motion.c
 #, c-format
 msgid "Stream feature for thread %d is disabled."
-msgstr ""
+msgstr "Sivun %d suoratoisto-ominaisuus on poistettu käytöstä."
 
-#: motion.c:3289
+#: src/motion.c
 #, c-format
 msgid "Stream port number %d for thread %d conflicts with thread %d"
-msgstr ""
+msgstr "Stream-porttinumero %d lankalle %d on ristiriidassa langan %d kanssa"
 
-#: motion.c:3339
+#: src/motion.c
 msgid "Restarting motion."
-msgstr ""
+msgstr "Käynnistä liike uudelleen."
 
-#: motion.c:3345
+#: src/motion.c
 msgid "Motion restarted"
-msgstr ""
+msgstr "Liike käynnistettiin uudelleen"
 
-#: motion.c:3369
+#: src/motion.c
 #, c-format
 msgid "Thread %d - Watchdog timeout. Trying to do a graceful restart"
-msgstr ""
+msgstr "Ketju %d - vahtikoiran aikakatkaisu. Yritetään tehdä siro uusi käynnistys"
 
-#: motion.c:3377
+#: src/motion.c
 #, c-format
 msgid "Thread %d - Watchdog timeout did NOT restart, killing it!"
-msgstr ""
+msgstr "Ketju %d - Vahtikoiran aikakatkaisu EI käynnistynyt uudelleen tappaen sen!"
 
-#: motion.c:3437
+#: src/motion.c
 #, c-format
 msgid "Thread %d - Cleaning thread."
-msgstr ""
+msgstr "Kierre %d - Puhdistuslanka."
 
-#: motion.c:3472
+#: src/motion.c
 #, c-format
 msgid "DEBUG-1 threads_running %d motion_threads_running %d , finish %d"
-msgstr ""
+msgstr "DEBUG-1-ketjut, jotka kulkevat %d liiketalieet, jotka kulkevat %d, lopeta %d"
 
-#: motion.c:3520
+#: src/motion.c
 #, c-format
 msgid "Waiting for threads to finish, pid: %d"
-msgstr ""
+msgstr "Odottaa, että ketjut valmistuvat, pid: %d"
 
-#: motion.c:3530
+#: src/motion.c
 #, c-format
 msgid "Motion thread %d restart"
-msgstr ""
+msgstr "Liikelanka %d käynnistyy uudelleen"
 
-#: motion.c:3540
+#: src/motion.c
 msgid "Threads finished"
-msgstr ""
+msgstr "Langat valmis"
 
-#: motion.c:3548
+#: src/motion.c src/webu.c
 msgid "Motion terminating"
-msgstr ""
+msgstr "Liike päättyy"
 
-#: motion.c:3587
+#: src/motion.c
 #, c-format
 msgid "Could not allocate %llu bytes of memory!"
-msgstr ""
+msgstr "%Llu-tavua muistia ei voitu varata!"
 
-#: motion.c:3619
+#: src/motion.c
 #, c-format
 msgid "Warning! Function %s tries to resize memoryblock at %p to 0 bytes!"
-msgstr ""
+msgstr "Varoitus! Toiminto %s yrittää muuttaa muistimuistion %p arvoksi 0 tavua!"
 
-#: motion.c:3625
+#: src/motion.c
 #, c-format
 msgid "Could not resize memory-block at offset %p to %llu bytes (function %s)!"
-msgstr ""
+msgstr "Muistilohkon kokoa ei voitu muuttaa siirtymään %p %llu-tavuihin (funktio %s)!"
 
-#: motion.c:3667
+#: src/motion.c
 #, c-format
 msgid "Problem creating directory %s"
-msgstr ""
+msgstr "Ongelma hakemiston %s luomisessa"
 
-#: motion.c:3675
+#: src/motion.c
 #, c-format
 msgid "creating directory %s"
-msgstr ""
+msgstr "luomalla hakemistoa %s"
 
-#: motion.c:3724
+#: src/motion.c
 #, c-format
 msgid "Error opening file %s with mode %s"
-msgstr ""
+msgstr "Virhe avaamalla tiedostoa %s tilassa %s"
 
-#: motion.c:3743
+#: src/motion.c
 msgid "Error closing file"
-msgstr ""
+msgstr "Virhe tiedoston sulkemisessa"
 
-#: motion.c:3801
+#: src/motion.c
 #, c-format
 msgid "invalid format specifier keyword %*.*s"
-msgstr ""
+msgstr "virheellinen muotoa määrittelevä avainsana %*.*s"
 
-#: motion.c:4024
+#: src/motion.c
 #, c-format
 msgid "Unable to set thread name %s"
-msgstr ""
+msgstr "Langan nimeä %s ei voitu asettaa"
 
-#: motion.c:4044
+#: src/motion.c
 msgid "FFMPEG version too old. Disabling pass-through processing."
-msgstr ""
+msgstr "FFMPEG-versio on liian vanha. Läpäisykäsittelyn poistaminen käytöstä."
 
-#: motion.c:4049
+#: src/motion.c
 msgid "pass-through is enabled but is still experimental."
-msgstr ""
+msgstr "läpikulku on käytössä, mutta on silti kokeellinen."
 
-#: netcam.c:74
+#: src/netcam.c
 msgid "Invalid URL.  Can not parse values."
-msgstr ""
+msgstr "Virheellinen URL. Arvoja ei voi jäsentää."
 
-#: netcam.c:179
+#: src/netcam.c
 #, c-format
 msgid "Using port number %d"
-msgstr ""
+msgstr "Portinumeron %d käyttäminen"
 
-#: netcam.c:241
+#: src/netcam.c
 #, c-format
 msgid "Camera handler thread [%d] started"
-msgstr ""
+msgstr "Kameran käsittelijän lanka [ %d] alkoi"
 
-#: netcam.c:262
+#: src/netcam.c
 msgid ""
-"Closing netcam socket as Keep-Alive time is up (camera sent Close field). A "
-"reconnect should happen."
+"Closing netcam socket as Keep-Alive time is up (camera sent Close field). A reconnect "
+"should happen."
 msgstr ""
+"Netcam-pistorasian sulkeminen Keep-Alive-ajan ollessa lopussa (kamera lähetetty Sulje "
+"kenttä).uudelleenyhteyden pitäisi tapahtua."
 
-#: netcam.c:272
+#: src/netcam.c
 msgid "re-opening camera (non-streaming)"
-msgstr ""
+msgstr "kameran avaaminen uudelleen (ei suoratoisto)"
 
-#: netcam.c:282 netcam.c:324
+#: src/netcam.c
 msgid "camera re-connected"
-msgstr ""
+msgstr "kamera kytketty uudelleen"
 
-#: netcam.c:290 netcam.c:313
+#: src/netcam.c
 #, c-format
 msgid "Unrecognized image header (%d)"
-msgstr ""
+msgstr "Tunnistamaton kuvan otsikko ( %d)"
 
-#: netcam.c:293 netcam.c:316
+#: src/netcam.c
 #, c-format
 msgid "Error in header (%d)"
-msgstr ""
+msgstr "Virhe otsikossa ( %d)"
 
-#: netcam.c:303
+#: src/netcam.c
 msgid "re-opening camera (streaming)"
-msgstr ""
+msgstr "kameran avaaminen uudelleen (suoratoisto)"
 
-#: netcam.c:337
+#: src/netcam.c
 msgid "Error getting jpeg image"
-msgstr ""
+msgstr "Virhe haettaessa jpeg-kuvaa"
 
-#: netcam.c:342
+#: src/netcam.c
 msgid "Trying to re-connect"
-msgstr ""
+msgstr "Yritetään muodostaa uudelleen yhteys"
 
-#: netcam.c:392 netcam_rtsp.c:1429
+#: src/netcam.c src/netcam_rtsp.c
 msgid "netcam camera handler: finish set, exiting"
-msgstr ""
+msgstr "netcam-kamerankäsittelylaite: viimeistely, poistuminen"
 
-#: netcam.c:494
+#: src/netcam.c
 msgid "No response from camera handler - it must have already died"
-msgstr ""
+msgstr "Ei vastausta kameran käsittelijältä - sen on oltava jo kuollut"
 
-#: netcam.c:567
+#: src/netcam.c
 msgid "called with no data in buffer"
-msgstr ""
+msgstr "kutsutaan ilman tietoja puskurissa"
 
-#: netcam.c:648
+#: src/netcam.c
 #, c-format
 msgid "Network Camera starting for camera (%s)"
-msgstr ""
+msgstr "Verkkokamera käynnistyy kameralle ( %s)"
 
-#: netcam.c:656
+#: src/netcam.c
 #, c-format
 msgid "Invalid netcam_proxy (%s)"
-msgstr ""
+msgstr "Virheellinen netcam-välityspalvelin ( %s)"
 
-#: netcam.c:663
+#: src/netcam.c
 msgid "Username/password not allowed on a proxy URL"
-msgstr ""
+msgstr "Käyttäjätunnusta / salasanaa ei sallita välityspalvelimen URL-osoitteessa"
 
-#: netcam.c:685
+#: src/netcam.c
 #, c-format
 msgid "Invalid netcam service '%s' "
-msgstr ""
+msgstr "Virheellinen netcam-palvelu ' %s'"
 
-#: netcam.c:692
+#: src/netcam.c
 #, c-format
 msgid "Invalid netcam_url for camera (%s)"
-msgstr ""
+msgstr "Virheellinen netcam-URL-osoite kameralle ( %s)"
 
-#: netcam.c:726
+#: src/netcam.c
 #, c-format
 msgid ""
-"Netcam_http parameter '%s' converts to flags: HTTP/1.0: %s HTTP/1.1: %s Keep-"
-"Alive %s."
+"Netcam_http parameter '%s' converts to flags: HTTP/1.0: %s HTTP/1.1: %s Keep-Alive %s."
 msgstr ""
+"Netcam http -parametri ' %s' muunnetaan lippuiksi: HTTP / 1.0: %s HTTP / 1.1: %s Keep-"
+"Elossa %s."
 
-#: netcam.c:736
+#: src/netcam.c
 msgid "now calling netcam_setup_html()"
-msgstr ""
+msgstr "soitetaan nyt netcam setup html ()"
 
-#: netcam.c:739
+#: src/netcam.c
 msgid "now calling netcam_setup_ftp"
-msgstr ""
+msgstr "soitetaan nyt netcam setup ftp: lle"
 
-#: netcam.c:742
+#: src/netcam.c
 msgid "now calling netcam_setup_file()"
-msgstr ""
+msgstr "soitetaan nyt netcam-asetustiedostoon ()"
 
-#: netcam.c:748
+#: src/netcam.c
 #, c-format
-msgid ""
-"Invalid netcam service '%s' - must be http, ftp, mjpg, mjpeg, v4l2 or jpeg."
+msgid "Invalid netcam service '%s' - must be http, ftp, mjpg, mjpeg, v4l2 or jpeg."
 msgstr ""
+"Virheellinen netcam-palvelun ' %s' - täytyy olla http, ftp, mjpg, mjpeg, v4l2 tai "
+"jpeg."
 
-#: netcam.c:765 netcam_rtsp.c:1536
+#: src/netcam.c src/netcam_rtsp.c
 #, c-format
 msgid "Failed trying to read first image - retval:%d"
-msgstr ""
+msgstr "Ensimmäisen kuvan lukeminen epäonnistui - viimeistely: %d"
 
-#: netcam.c:776
+#: src/netcam.c
 msgid "libjpeg decompression failure on first frame - giving up!"
-msgstr ""
+msgstr "libjpeg-puristusvirhe ensimmäisessä kehyksessä - luopuminen!"
 
-#: netcam.c:787
+#: src/netcam.c
 #, c-format
 msgid "Width/height(%dx%d) must be multiples of 8"
-msgstr ""
+msgstr "Leveyden / korkeuden ( %dx %d) on oltava 8-kertaisia"
 
-#: netcam.c:811
+#: src/netcam.c
 #, c-format
 msgid "Error starting camera handler thread [%d]"
-msgstr ""
+msgstr "Virhe käynnistettäessä kamerankäsittelylankaa [ %d]"
 
-#: netcam_ftp.c:165
+#: src/netcam_ftp.c
 msgid "recv failed in ftp_get_more"
-msgstr ""
+msgstr "recv epäonnistui ftp saada enemmän"
 
-#: netcam_ftp.c:255
+#: src/netcam_ftp.c
 #, c-format
 msgid "Server Response: %s"
-msgstr ""
+msgstr "Palvelimen vastaus: %s"
 
-#: netcam_ftp.c:280
+#: src/netcam_ftp.c
 msgid "send failed in ftp_send_user"
-msgstr ""
+msgstr "lähetys epäonnistui ftp-käyttäjän lähettämisessä"
 
-#: netcam_ftp.c:306
+#: src/netcam_ftp.c
 msgid "send failed in ftp_send_passwd"
-msgstr ""
+msgstr "lähetä epäonnistui ftp lähetä passwd"
 
-#: netcam_ftp.c:337
+#: src/netcam_ftp.c
 msgid "send failed in ftp_quit"
-msgstr ""
+msgstr "lähetys epäonnistui ftp lopettaa"
 
-#: netcam_ftp.c:385
+#: src/netcam_ftp.c
 msgid "gethostbyname failed in ftp_connect"
-msgstr ""
+msgstr "gethostbyname epäonnistui ftp-yhteyden muodostamisessa"
 
-#: netcam_ftp.c:392
+#: src/netcam_ftp.c
 msgid "gethostbyname address mismatch in ftp_connect"
-msgstr ""
+msgstr "gethostbyname-osoitteen yhteensopimattomuus ftp connectissä"
 
-#: netcam_ftp.c:404 netcam_ftp.c:524
+#: src/netcam_ftp.c
 msgid "socket failed"
-msgstr ""
+msgstr "pistorasia epäonnistui"
 
-#: netcam_ftp.c:411
+#: src/netcam_ftp.c
 msgid "Failed to create a connection"
-msgstr ""
+msgstr "Yhteyden luominen epäonnistui"
 
-#: netcam_ftp.c:471
+#: src/netcam_ftp.c
 msgid "FTP server asking for ACCT on anonymous"
-msgstr ""
+msgstr "FTP-palvelin, joka pyytää ACCT: tä nimettömästi"
 
-#: netcam_ftp.c:532
+#: src/netcam_ftp.c
 msgid "setting socket option SO_REUSEADDR"
-msgstr ""
+msgstr "asetusliitäntävaihtoehto SO REUSEADDR"
 
-#: netcam_ftp.c:546 netcam_ftp.c:642
+#: src/netcam_ftp.c
 msgid "send failed in ftp_get_connection"
-msgstr ""
+msgstr "lähetys epäonnistui ftp-muodossa"
 
-#: netcam_ftp.c:574
+#: src/netcam_ftp.c
 msgid "Invalid answer to PASV"
-msgstr ""
+msgstr "Virheellinen vastaus PASV: lle"
 
-#: netcam_ftp.c:591
+#: src/netcam_ftp.c
 msgid "Failed to create a data connection"
-msgstr ""
+msgstr "Tietoyhteyden luominen epäonnistui"
 
-#: netcam_ftp.c:610
+#: src/netcam_ftp.c
 msgid "bind failed"
-msgstr ""
+msgstr "sidonta epäonnistui"
 
-#: netcam_ftp.c:622
+#: src/netcam_ftp.c
 msgid "listen failed"
-msgstr ""
+msgstr "kuuntelu epäonnistui"
 
-#: netcam_ftp.c:749 netcam_ftp.c:810
+#: src/netcam_ftp.c
 msgid "send failed in ftp_get_socket"
-msgstr ""
+msgstr "lähetys epäonnistui ftp get socket"
 
-#: netcam_ftp.c:774
+#: src/netcam_ftp.c
 msgid "accept in ftp_get_socket"
-msgstr ""
+msgstr "hyväksyä ftp get -liitäntään"
 
-#: netcam_ftp.c:860
+#: src/netcam_ftp.c
 msgid "recv failed in ftp_read"
-msgstr ""
+msgstr "recv epäonnistui ftp-lukemissa"
 
-#: netcam_ftp.c:918
+#: src/netcam_ftp.c
 msgid "ftp_get_socket failed"
-msgstr ""
+msgstr "ftp get socket epäonnistui"
 
-#: netcam_ftp.c:993
+#: src/netcam_ftp.c
 msgid "Error sending TYPE I to ftp server"
-msgstr ""
+msgstr "Virhe lähettäessä TYPE I ftp-palvelimelle"
 
-#: netcam_http.c:102
+#: src/netcam_http.c
 #, c-format
 msgid "malformed token Content-Length but value %ld"
-msgstr ""
+msgstr "väärin muotoiltu tunnuksen sisältöpituus, mutta arvo %ld"
 
-#: netcam_http.c:105
+#: src/netcam_http.c
 #, c-format
 msgid "Content-Length %ld"
-msgstr ""
+msgstr "Sisällön pituus %ld"
 
-#: netcam_http.c:192
+#: src/netcam_http.c
 #, c-format
 msgid "Content-type %s"
-msgstr ""
+msgstr "Sisältötyyppi %s"
 
-#: netcam_http.c:252
+#: src/netcam_http.c
 msgid "Error reading image header, streaming mode (1). Null header."
-msgstr ""
+msgstr "Virhe kuvan otsakkeen lukemisessa, suoratoistotila (1). Null otsikko."
 
-#: netcam_http.c:256
+#: src/netcam_http.c
 #, c-format
 msgid "Error reading image header, streaming mode (1). Unknown header '%s'"
 msgstr ""
+"Virhe kuvan otsakkeen lukemisessa, suoratoistotila (1). Tuntematon otsikko ' %s'"
 
-#: netcam_http.c:276
+#: src/netcam_http.c
 msgid "Error reading image header (2)"
-msgstr ""
+msgstr "Virhe kuvan otsikon lukemisessa (2)"
 
-#: netcam_http.c:286
+#: src/netcam_http.c
 msgid "Header not JPEG"
-msgstr ""
+msgstr "Otsikko ei JPEG"
 
-#: netcam_http.c:298
+#: src/netcam_http.c
 msgid "Content-Length 0"
-msgstr ""
+msgstr "Sisällön pituus 0"
 
-#: netcam_http.c:307
+#: src/netcam_http.c
 msgid "Found image header record"
-msgstr ""
+msgstr "Löytyi kuvan otsikkotietue"
 
-#: netcam_http.c:349
+#: src/netcam_http.c
 msgid "Error sending 'connect' request"
-msgstr ""
+msgstr "Virhe lähetettäessä yhteyspyyntöä"
 
-#: netcam_http.c:378
+#: src/netcam_http.c
 #, c-format
 msgid "Received first header ('%s')"
-msgstr ""
+msgstr "Vastaanotettu ensimmäinen otsikko (' %s')"
 
-#: netcam_http.c:382
+#: src/netcam_http.c
 #, c-format
 msgid "Error reading first header (%s)"
-msgstr ""
+msgstr "Virhe luettaessa ensimmäistä otsikkoa ( %s)"
 
-#: netcam_http.c:389
+#: src/netcam_http.c
 #, c-format
 msgid "HTTP Result code %d"
-msgstr ""
+msgstr "HTTP-tuloskoodi %d"
 
-#: netcam_http.c:403
+#: src/netcam_http.c
 msgid "Removed netcam Keep-Alive flag due to apparent closed HTTP connection."
-msgstr ""
+msgstr "Netcam Keep-Alive -lippu poistettiin ilmeisen suljetun HTTP-yhteyden vuoksi."
 
-#: netcam_http.c:430
+#: src/netcam_http.c
 msgid "Non-streaming camera (keep-alive set)"
-msgstr ""
+msgstr "Ei suoratoistokamera (pidä hengissä)"
 
-#: netcam_http.c:433
+#: src/netcam_http.c
 msgid "Non-streaming camera (keep-alive not set)"
-msgstr ""
+msgstr "Ei suoratoistokamera (pysyä hengissä ei ole asetettu)"
 
-#: netcam_http.c:439
+#: src/netcam_http.c
 msgid "Streaming camera"
-msgstr ""
+msgstr "Virtakamera"
 
-#: netcam_http.c:458
+#: src/netcam_http.c
 #, c-format
 msgid "Boundary string [%s]"
-msgstr ""
+msgstr "Rajamerkkijono [ %s]"
 
-#: netcam_http.c:461
+#: src/netcam_http.c
 msgid "Boundary string not found in header"
-msgstr ""
+msgstr "Rajamerkkijonoa ei löydy otsikosta"
 
-#: netcam_http.c:468
-msgid ""
-"Streaming camera probably using MJPG-blocks, consider using mjpg:// "
-"netcam_url."
+#: src/netcam_http.c
+msgid "Streaming camera probably using MJPG-blocks, consider using mjpg:// netcam_url."
 msgstr ""
+"Suoratoistokamera, joka todennäköisesti käyttää MJPG-lohkoja, harkitse mjpg: //netcam "
+"url."
 
-#: netcam_http.c:474
+#: src/netcam_http.c
 msgid "Unrecognized content type"
-msgstr ""
+msgstr "Tunnistamaton sisältötyyppi"
 
-#: netcam_http.c:480
+#: src/netcam_http.c
 msgid "Content-length present"
-msgstr ""
+msgstr "Sisältöpituus läsnä"
 
-#: netcam_http.c:487
+#: src/netcam_http.c
 msgid "Content-length 0"
-msgstr ""
+msgstr "Sisällön pituus 0"
 
-#: netcam_http.c:506
+#: src/netcam_http.c
 #, c-format
 msgid "Found Conn: close header ('%s')"
-msgstr ""
+msgstr "Löydetty Conn: sulje otsikko (' %s')"
 
-#: netcam_http.c:522
+#: src/netcam_http.c
 msgid ""
-"Both 'Connection: Keep-Alive' and 'Connection: close' header received. "
-"Motion removes keepalive."
+"Both 'Connection: Keep-Alive' and 'Connection: close' header received. Motion removes "
+"keepalive."
 msgstr ""
+"Sekä 'Yhteys: Pidä elossa' ja 'Yhteys: sulje' -otsikko vastaanotettu.Liike poistaa "
+"pitävyyden."
 
-#: netcam_http.c:534
+#: src/netcam_http.c
 msgid ""
-"Both 'Connection: Keep-Alive' and 'Connection: close' header received. "
-"Motion continues unchanged."
+"Both 'Connection: Keep-Alive' and 'Connection: close' header received. Motion "
+"continues unchanged."
 msgstr ""
+"Sekä 'Yhteys: Pidä elossa' ja 'Yhteys: sulje' -otsikko vastaanotettu.Liike jatkuu "
+"ennallaan."
 
-#: netcam_http.c:547
+#: src/netcam_http.c
 msgid "Received a Keep-Alive field in this set of headers."
-msgstr ""
+msgstr "Vastaanotti Keep-Alive -kentän tähän otsikkokokoelmaan."
 
-#: netcam_http.c:556
+#: src/netcam_http.c
 msgid ""
 "No 'Connection: Keep-Alive' nor 'Connection: close' header received.\n"
 " Motion removes keepalive."
 msgstr ""
+"Otsikkoa 'Yhteys: Pidä elävänä' eikä 'Yhteys: sulje' otsikkoa ei ole vastaanotettu. \n"
+" Liike poistaa pitävyyden."
 
-#: netcam_http.c:568
+#: src/netcam_http.c
 msgid ""
 "No 'Connection: Keep-Alive' nor 'Connection: close' header received.\n"
 " Motion continues unchanged."
 msgstr ""
+"Otsikkoa 'Yhteys: Pidä elävänä' eikä 'Yhteys: sulje' otsikkoa ei ole vastaanotettu. \n"
+" Liike jatkuu ennallaan."
 
-#: netcam_http.c:599
+#: src/netcam_http.c
 msgid ""
 "Removed netcam Keep-Alive flag because 'Connection: close' header received.\n"
 " Netcam does not support Keep-Alive. Motion continues in non-Keep-Alive."
 msgstr ""
+"Netcam Keep-Alive -lippu poistettu, koska 'Yhteys: sulje' -otsikko on "
+"vastaanotettu. \n"
+" Netcam ei tue Keep-Alive-ohjelmaa. Liike jatkuu ei-säilyä-elossa."
 
-#: netcam_http.c:605
+#: src/netcam_http.c
 msgid ""
 "Keep-Alive has reached end of valid period.\n"
 "Motion will close netcam, then resume Keep-Alive with a new socket."
 msgstr ""
+"Keep-Alive on saavuttanut voimassa olevan ajanjakson lopun. \n"
+" Motion sulkee netcamin, jatkaa sitten Keep-Alive -sovellusta uudella pistorasialla."
 
-#: netcam_http.c:631
+#: src/netcam_http.c
 msgid "disconnect"
-msgstr ""
+msgstr "katkaista"
 
-#: netcam_http.c:673
+#: src/netcam_http.c
 #, c-format
 msgid "getaddrinfo() failed (%s): %s"
-msgstr ""
+msgstr "getaddrinfo () epäonnistui ( %s): %s"
 
-#: netcam_http.c:676
+#: src/netcam_http.c
 msgid "disconnecting netcam (1)"
-msgstr ""
+msgstr "verkkokameran irrottaminen (1)"
 
-#: netcam_http.c:685 netcam_http.c:1154
+#: src/netcam_http.c
 msgid "disconnecting netcam since keep-alive not set."
-msgstr ""
+msgstr "verkkokameran irrottaminen, koska hengissä pysymistä ei ole asetettu."
 
-#: netcam_http.c:692
+#: src/netcam_http.c
 msgid "with no keepalive, attempt to create socket failed."
-msgstr ""
+msgstr "yrittämättä luoda pistorasiaa epäonnistuneesti ilman pidättävyyttä."
 
-#: netcam_http.c:697
+#: src/netcam_http.c
 #, c-format
 msgid "with no keepalive, new socket created fd %d"
-msgstr ""
+msgstr "ilman jatkuvuutta, uusi pistorasia luotiin fd %d"
 
-#: netcam_http.c:703
+#: src/netcam_http.c
 msgid ""
-"with keepalive set, invalid socket.This could be the first time. Creating a "
-"new one failed."
+"with keepalive set, invalid socket.This could be the first time. Creating a new one "
+"failed."
 msgstr ""
+"Pidä kiinni, väärä pistorasia. Tämä voi olla ensimmäinen kerta. Luominenuusi "
+"epäonnistui."
 
-#: netcam_http.c:709
+#: src/netcam_http.c
 #, c-format
 msgid ""
-"with keepalive set, invalid socket.This could be first time, created a new "
-"one with fd %d"
+"with keepalive set, invalid socket.This could be first time, created a new one with "
+"fd %d"
 msgstr ""
+"Pidä kiinni, virheellinen pistorasia. Tämä saattaa olla ensimmäinen kerta, luonut "
+"uudenyksi fd %d kanssa"
 
-#: netcam_http.c:723
+#: src/netcam_http.c
 #, c-format
 msgid "SO_KEEPALIVE is %s"
-msgstr ""
+msgstr "Joten KEEPALIVE on %s"
 
-#: netcam_http.c:724
+#: src/netcam_http.c
 msgid "ON"
-msgstr ""
+msgstr "PÄÄLLÄ"
 
-#: netcam_http.c:724
+#: src/netcam_http.c
 msgid "OFF"
-msgstr ""
+msgstr "POIS PÄÄLTÄ"
 
-#: netcam_http.c:735
+#: src/netcam_http.c
 msgid "SO_KEEPALIVE set on socket."
-msgstr ""
+msgstr "SO KEEPALIVE asetettu pistorasiaan."
 
-#: netcam_http.c:739
+#: src/netcam_http.c
 #, c-format
 msgid "re-using socket %d since keepalive is set."
-msgstr ""
+msgstr "käytetään uudelleen pistorasiaa %d, koska pidätysmäärä on asetettu."
 
-#: netcam_http.c:747
+#: src/netcam_http.c
 msgid "fcntl(1) on socket"
-msgstr ""
+msgstr "fcntl (1) pistorasiassa"
 
-#: netcam_http.c:754
+#: src/netcam_http.c
 msgid "fcntl(2) on socket"
-msgstr ""
+msgstr "fcntl (2) pistorasiassa"
 
-#: netcam_http.c:769
+#: src/netcam_http.c
 #, c-format
 msgid "connect() failed (%d)"
-msgstr ""
+msgstr "yhdistäminen () epäonnistui ( %d)"
 
-#: netcam_http.c:771
+#: src/netcam_http.c
 msgid "disconnecting netcam (4)"
-msgstr ""
+msgstr "verkkokameran irrottaminen (4)"
 
-#: netcam_http.c:786
+#: src/netcam_http.c
 msgid "timeout on connect()"
-msgstr ""
+msgstr "yhteyden aikakatkaisu ()"
 
-#: netcam_http.c:788
+#: src/netcam_http.c
 msgid "disconnecting netcam (2)"
-msgstr ""
+msgstr "verkkokameran irrottaminen (2)"
 
-#: netcam_http.c:802
+#: src/netcam_http.c
 msgid "getsockopt after connect"
-msgstr ""
+msgstr "saa yhteyden muodostamisen jälkeen"
 
-#: netcam_http.c:810
+#: src/netcam_http.c
 msgid "connect returned error"
-msgstr ""
+msgstr "yhteyden palautusvirhe"
 
-#: netcam_http.c:812
+#: src/netcam_http.c
 msgid "disconnecting netcam (3)"
-msgstr ""
+msgstr "verkkokameran irrottaminen (3)"
 
-#: netcam_http.c:842
+#: src/netcam_http.c
 #, c-format
 msgid "expanding buffer from [%d/%d] to [%d/%d] bytes."
-msgstr ""
+msgstr "laajennetaan puskuri [ %d / %d] - [ %d / %d] tavuihin."
 
-#: netcam_http.c:1099
+#: src/netcam_http.c
 #, c-format
 msgid "Potential split boundary - %d chars flushed, %d re-positioned"
-msgstr ""
+msgstr "Mahdollinen jakoraja - %d merkkiä tyhjennetty, %d asetettu uudelleen"
 
-#: netcam_http.c:1114
+#: src/netcam_http.c
 msgid "recv() fail after boundary string"
-msgstr ""
+msgstr "recv () epäonnistuu rajoitusjonon jälkeen"
 
-#: netcam_http.c:1158
+#: src/netcam_http.c
 msgid "leaving netcam connected."
-msgstr ""
+msgstr "jättäen netcam-yhteyden."
 
-#: netcam_http.c:1199
+#: src/netcam_http.c
 #, c-format
 msgid "about to try to connect, time #%d"
-msgstr ""
+msgstr "yrittää muodostaa yhteyttä, aika # %d"
 
-#: netcam_http.c:1203
+#: src/netcam_http.c
 msgid "Failed to open camera - check your config and that netcamera is online"
 msgstr ""
+"Kameran avaaminen epäonnistui - tarkista kokoonpanosi ja että netcamera on verkossa"
 
-#: netcam_http.c:1213
+#: src/netcam_http.c
 msgid "Error reading first header - re-trying"
-msgstr ""
+msgstr "Ensimmäisen otsikon lukemisessa tapahtui virhe - yritetään uudelleen"
 
-#: netcam_http.c:1218
+#: src/netcam_http.c
 msgid "Failed to read first camera header - giving up for now"
-msgstr ""
+msgstr "Kameran ensimmäistä otsikkoa ei luettu - luopuminen toistaiseksi"
 
-#: netcam_http.c:1253
+#: src/netcam_http.c
 #, c-format
 msgid "Netcam has flags: HTTP/1.0: %s HTTP/1.1: %s Keep-Alive %s."
-msgstr ""
+msgstr "Netcamilla on liput: HTTP / 1.0: %s HTTP / 1.1: %s Keep-Alive %s."
 
-#: netcam_http.c:1338
+#: src/netcam_http.c
 msgid ""
-"Removed netcam_keepalive flag due to proxy set.Proxy is incompatible with "
-"Keep-Alive."
+"Removed netcam_keepalive flag due to proxy set.Proxy is incompatible with Keep-Alive."
 msgstr ""
+"Poistettu netcam-säilytyslippu välityspalvelimen asettaman vuoksi. Proxy ei ole "
+"yhteensopiva verkkotunnuksen kanssaPitää hengissä."
 
-#: netcam_http.c:1454
+#: src/netcam_http.c
 msgid "Failed to read first stream header - giving up for now"
-msgstr ""
+msgstr "Ensimmäisen streamin otsikon lukeminen epäonnistui - luopuminen toistaiseksi"
 
-#: netcam_http.c:1460
+#: src/netcam_http.c
 msgid "connected, going on to read image."
-msgstr ""
+msgstr "kytketty, lukemassa kuvaa."
 
-#: netcam_http.c:1490
+#: src/netcam_http.c
 msgid "Read error, trying to reconnect.."
-msgstr ""
+msgstr "Lue virhe, yritetään muodostaa uudelleen yhteyttä .."
 
-#: netcam_http.c:1494
+#: src/netcam_http.c
 msgid "lost the cam."
-msgstr ""
+msgstr "kadonnut nokan."
 
-#: netcam_http.c:1507
+#: src/netcam_http.c
 #, c-format
 msgid "Refilled buffer with [%d] bytes from the network."
-msgstr ""
+msgstr "Täytetty puskuri [ %d] tavua verkosta."
 
-#: netcam_http.c:1575
+#: src/netcam_http.c
 #, c-format
 msgid "Read [%d/%d] header bytes."
-msgstr ""
+msgstr "Lue [ %d / %d] otsikkotavut."
 
-#: netcam_http.c:1587
+#: src/netcam_http.c
 msgid "Invalid header received, reconnecting"
-msgstr ""
+msgstr "Virheellinen otsikko vastaanotettu, yhteys muodostetaan uudelleen"
 
-#: netcam_http.c:1608
+#: src/netcam_http.c
 #, c-format
 msgid "Read [%d/%d] chunk bytes, [%d/%d] total"
-msgstr ""
+msgstr "Lue [ %d / %d] chunk-tavua, [ %d / %d] yhteensä"
 
-#: netcam_http.c:1622
+#: src/netcam_http.c
 #, c-format
 msgid "Chunk complete, buffer used [%d] bytes."
-msgstr ""
+msgstr "Palattu, puskurissa käytetty [ %d] tavua."
 
-#: netcam_http.c:1627
+#: src/netcam_http.c
 #, c-format
 msgid "Image complete, buffer used [%d] bytes."
-msgstr ""
+msgstr "Kuva valmis, puskuria käytetty [ %d] tavua."
 
-#: netcam_http.c:1653
+#: src/netcam_http.c
 msgid "now calling netcam_setup_mjpg()"
-msgstr ""
+msgstr "soitetaan nyt netcam setup mjpg ()"
 
-#: netcam_http.c:1678
+#: src/netcam_http.c
 msgid "connected, going on to read and decode MJPG chunks."
-msgstr ""
+msgstr "kytketty, lukemassa ja dekoodaamassa MJPG-paloja."
 
-#: netcam_http.c:1697
+#: src/netcam_http.c
 msgid "Begin"
-msgstr ""
+msgstr "Alkaa"
 
-#: netcam_http.c:1711
+#: src/netcam_http.c
 #, c-format
 msgid "stat(%s) error"
-msgstr ""
+msgstr "stat ( %s) virhe"
 
-#: netcam_http.c:1716
+#: src/netcam_http.c
 #, c-format
 msgid "statbuf.st_mtime[%d] != last_st_mtime[%d]"
-msgstr ""
+msgstr "statbuf.st mtime [ %d]! = viimeinen st mtime [ %d]"
 
-#: netcam_http.c:1722
+#: src/netcam_http.c
 msgid "waiting new file image timeout"
-msgstr ""
+msgstr "odottaa uuden tiedoston kuvan aikakatkaisua"
 
-#: netcam_http.c:1727
+#: src/netcam_http.c
 msgid "delay waiting new file image "
-msgstr ""
+msgstr "viivytä uuden tiedoston kuvan odottamista"
 
-#: netcam_http.c:1740
+#: src/netcam_http.c
 #, c-format
 msgid "processing new file image - st_mtime %d"
-msgstr ""
+msgstr "uuden tiedostokuvan käsittely - st mtime %d"
 
-#: netcam_http.c:1751
+#: src/netcam_http.c
 #, c-format
 msgid "open(%s) error: %d"
-msgstr ""
+msgstr "avoin ( %s) virhe: %d"
 
-#: netcam_http.c:1758
+#: src/netcam_http.c
 #, c-format
 msgid "read(%s) error: %d"
-msgstr ""
+msgstr "luku ( %s) virhe: %d"
 
-#: netcam_http.c:1767
+#: src/netcam_http.c
 msgid "End"
-msgstr ""
+msgstr "pää"
 
-#: netcam_http.c:1803
+#: src/netcam_http.c
 #, c-format
 msgid "netcam->file->path %s"
-msgstr ""
+msgstr "netcam-> tiedosto-> polku %s"
 
-#: netcam_jpeg.c:77
+#: src/netcam_jpeg.c
 msgid "Not enough data from netcam."
-msgstr ""
+msgstr "Ei tarpeeksi tietoa netcamista."
 
-#: netcam_jpeg.c:169
+#: src/netcam_jpeg.c
 #, c-format
 msgid "netcam->jpeg_error %d"
-msgstr ""
+msgstr "netcam-> jpeg-virhe %d"
 
-#: netcam_jpeg.c:276
+#: src/netcam_jpeg.c
 msgid "no new pic, no signal rcvd"
-msgstr ""
+msgstr "ei uutta kuvaa, ei signaalia rcvd"
 
-#: netcam_jpeg.c:281
+#: src/netcam_jpeg.c
 msgid "***new pic delay successful***"
-msgstr ""
+msgstr "*** uusi kuvaviive onnistunut ***"
 
-#: netcam_jpeg.c:321 netcam_jpeg.c:400
+#: src/netcam_jpeg.c
 #, c-format
 msgid "jpeg_error %d"
-msgstr ""
+msgstr "jpeg-virhe %d"
 
-#: netcam_jpeg.c:435
+#: src/netcam_jpeg.c
 #, c-format
 msgid "processing jpeg image - content length %d"
-msgstr ""
+msgstr "käsittely jpeg-kuvaa - sisällön pituus %d"
 
-#: netcam_jpeg.c:440
+#: src/netcam_jpeg.c
 #, c-format
 msgid "return code %d"
-msgstr ""
+msgstr "paluukoodi %d"
 
-#: netcam_jpeg.c:455
+#: src/netcam_jpeg.c
 #, c-format
 msgid ""
-"Camera width/height mismatch with JPEG image -  expected %dx%d, JPEG %dx%d "
-"retval %d"
+"Camera width/height mismatch with JPEG image -  expected %dx%d, JPEG %dx%d retval %d"
 msgstr ""
+"Kameran leveyden / korkeuden epäsuhta JPEG-kuvan kanssa - odotettu %dx %d, JPEG %dx "
+"%dtaajuus %d"
 
-#: netcam_jpeg.c:469
+#: src/netcam_jpeg.c
 #, c-format
 msgid "ret %d retval %d"
-msgstr ""
+msgstr "ret %d retval %d"
 
-#: netcam_rtsp.c:160
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Resized packet array to %d"
-msgstr ""
+msgstr "%s: Koko muutettu pakettiryhmäksi %d"
 
-#: netcam_rtsp.c:193
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: av_copy_packet: %s ,Interrupt: %s"
-msgstr ""
+msgstr "%s: av kopiopaketti: %s, keskeytä: %s"
 
-#: netcam_rtsp.c:195 netcam_rtsp.c:343 netcam_rtsp.c:353 netcam_rtsp.c:361
-#: netcam_rtsp.c:370 netcam_rtsp.c:379 netcam_rtsp.c:398 netcam_rtsp.c:409
-#: netcam_rtsp.c:417 netcam_rtsp.c:601
+#: src/netcam_rtsp.c
 msgid "True"
-msgstr ""
+msgstr "Totta"
 
-#: netcam_rtsp.c:195 netcam_rtsp.c:343 netcam_rtsp.c:353 netcam_rtsp.c:361
-#: netcam_rtsp.c:370 netcam_rtsp.c:379 netcam_rtsp.c:398 netcam_rtsp.c:409
-#: netcam_rtsp.c:417 netcam_rtsp.c:601
+#: src/netcam_rtsp.c
 msgid "False"
-msgstr ""
+msgstr "Väärä"
 
-#: netcam_rtsp.c:236
+#: src/netcam_rtsp.c
+msgid "Ignoring packet with invalid data"
+msgstr "Väärällä tiedolla olevan paketin ohittaminen"
+
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Error sending packet to codec: %s"
-msgstr ""
+msgstr "Virhe paketin lähettämisessä koodekkiin: %s"
 
-#: netcam_rtsp.c:251 netcam_rtsp.c:276
-msgid "Ignoring packet with invalid data"
-msgstr ""
-
-#: netcam_rtsp.c:258
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Error receiving frame from codec: %s"
-msgstr ""
+msgstr "Virhe vastaanottaessa kehystä koodekista: %s"
 
-#: netcam_rtsp.c:282
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Error decoding packet: %s"
-msgstr ""
+msgstr "Virhe paketin dekoodauksessa: %s"
 
-#: netcam_rtsp.c:319
+#: src/netcam_rtsp.c
 msgid "Error decoding video packet: Copying to buffer"
-msgstr ""
+msgstr "Virhe videopaketin dekoodauksessa: Kopioidaan puskuriin"
 
-#: netcam_rtsp.c:342 netcam_rtsp.c:397
+#: src/netcam_rtsp.c
 #, c-format
-msgid "%s: av_find_best_stream: %s,Interrupt %s"
-msgstr ""
+msgid "%s: %s: %s,Interrupt %s"
+msgstr "%s: %s: %s, keskeytä %s"
 
-#: netcam_rtsp.c:352 netcam_rtsp.c:408
+#: src/netcam_rtsp.c
 #, c-format
-msgid "%s: avcodec_find_decoder: Failed,Interrupt %s"
-msgstr ""
+msgid "%s: %s: Failed,Interrupt %s"
+msgstr "%s: %s: epäonnistui, keskeytti %s"
 
-#: netcam_rtsp.c:360
+#: src/netcam_rtsp.c
 #, c-format
-msgid "%s: avcodec_alloc_context3: Failed,Interrupt %s"
-msgstr ""
+msgid "%s: Ignoring user requested decoder %s"
+msgstr "%s: Käyttäjän pyytämän dekooderin ohittaminen %s"
 
-#: netcam_rtsp.c:369
+#: src/netcam_rtsp.c
 #, c-format
-msgid "%s: avcodec_parameters_to_context: %s,Interrupt %s"
-msgstr ""
+msgid "%s: Using decoder %s"
+msgstr "%s: Dekooderin %s käyttäminen"
 
-#: netcam_rtsp.c:378 netcam_rtsp.c:416
-#, c-format
-msgid "%s: avcodec_open2: %s,Interrupt %s"
-msgstr ""
-
-#: netcam_rtsp.c:454
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Camera reading (%s) timed out"
-msgstr ""
+msgstr "%s: Kameran lukema ( %s) aikakatkaistiin"
 
-#: netcam_rtsp.c:472
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Camera (%s) timed out"
-msgstr ""
+msgstr "%s: Kameran ( %s) aikakatkaisu"
 
-#: netcam_rtsp.c:503
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Error allocating picture in: %s"
-msgstr ""
+msgstr "Virhe kuvan allokoinnissa: %s"
 
-#: netcam_rtsp.c:521
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Error allocating picture out: %s"
-msgstr ""
+msgstr "Virhe kuvan allokoinnissa: %s"
 
-#: netcam_rtsp.c:539
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Error resizing/reformatting: %s"
-msgstr ""
+msgstr "Virhe koon muuttamisessa / alustamisessa: %s"
 
-#: netcam_rtsp.c:556
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Error putting frame into output buffer: %s"
-msgstr ""
+msgstr "Virhe asetettaessa kehystä lähtöpuskuriin: %s"
 
-#: netcam_rtsp.c:599
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: av_read_frame: %s ,Interrupt: %s"
-msgstr ""
+msgstr "%s: av lukukehys: %s, keskeytä: %s"
 
-#: netcam_rtsp.c:686 netcam_rtsp.c:694
+#: src/netcam_rtsp.c
 msgid "The network camera is sending pictures in a different"
-msgstr ""
+msgstr "Verkkokamera lähettää kuvia erilaisina"
 
-#: netcam_rtsp.c:687
+#: src/netcam_rtsp.c
 msgid "size than specified in the config and also a "
-msgstr ""
+msgstr "koko kuin määritetty konfiguraatiossa ja myös a"
 
-#: netcam_rtsp.c:688
+#: src/netcam_rtsp.c
 msgid "different picture format.  The picture is being"
-msgstr ""
+msgstr "erilainen kuvamuoto. Kuva on"
 
-#: netcam_rtsp.c:689
+#: src/netcam_rtsp.c
 msgid "transcoded to YUV420P and into the size requested"
-msgstr ""
+msgstr "koodattu YUV420P: lle ja haluttuun kokoon"
 
-#: netcam_rtsp.c:690
+#: src/netcam_rtsp.c
 msgid "in the config file.  If possible change netcam to"
-msgstr ""
+msgstr "konfigurointitiedostossa. Jos mahdollista, muuta netcam-tilaksi"
 
-#: netcam_rtsp.c:691
+#: src/netcam_rtsp.c
 msgid "be in YUV420P format and the size requested in the"
-msgstr ""
+msgstr "olla YUV420P-muodossa ja koko vaadittu"
 
-#: netcam_rtsp.c:692
+#: src/netcam_rtsp.c
 msgid "config to possibly lower CPU usage."
-msgstr ""
+msgstr "config mahdollisesti vähentää prosessorin käyttöä."
 
-#: netcam_rtsp.c:695
+#: src/netcam_rtsp.c
 msgid "size than specified in the configuration file."
-msgstr ""
+msgstr "koko kuin määritystiedostossa määritetty."
 
-#: netcam_rtsp.c:696
+#: src/netcam_rtsp.c
 msgid "The picture is being transcoded into the size "
-msgstr ""
+msgstr "Kuva muutetaan kooksi"
 
-#: netcam_rtsp.c:697
+#: src/netcam_rtsp.c
 msgid "requested in the configuration.  If possible change"
-msgstr ""
+msgstr "pyydetään kokoonpanossa. Muuta mahdollisuuksien mukaan"
 
-#: netcam_rtsp.c:698
+#: src/netcam_rtsp.c
 msgid "netcam or configuration to indicate the same size"
-msgstr ""
+msgstr "netcam tai kokoonpano osoittamaan saman koon"
 
-#: netcam_rtsp.c:699
+#: src/netcam_rtsp.c
 msgid "to possibly lower CPU usage."
-msgstr ""
+msgstr "mahdollisesti vähentää suorittimen käyttöä."
 
-#: netcam_rtsp.c:701
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Netcam: %d x %d => Config: %d x %d"
-msgstr ""
+msgstr "Netcam: %dx %d => Config: %dx %d"
 
-#: netcam_rtsp.c:705
-msgid "format than YUV420P.  The image sent is being "
-msgstr ""
+#: src/netcam_rtsp.c
+msgid "The image sent is being "
+msgstr "Lähetetty kuva on"
 
-#: netcam_rtsp.c:706
+#: src/netcam_rtsp.c
 msgid "trancoded to YUV420P.  If possible change netcam "
-msgstr ""
+msgstr "koodattu YUV420P: lle. Muuta netcamia jos mahdollista"
 
-#: netcam_rtsp.c:707
+#: src/netcam_rtsp.c
 msgid "picture format to YUV420P to possibly lower CPU usage."
-msgstr ""
+msgstr "kuvaformaatti YUV420P: een mahdollisesti vähentää suorittimen käyttöä."
 
-#: netcam_rtsp.c:724
+#: src/netcam_rtsp.c
 msgid "Unable to allocate swsframe_in."
-msgstr ""
+msgstr "Kehystä ei voi allokoida."
 
-#: netcam_rtsp.c:733
+#: src/netcam_rtsp.c
 msgid "Unable to allocate swsframe_out."
-msgstr ""
+msgstr "Kehystä ei voi jakaa."
 
-#: netcam_rtsp.c:753
+#: src/netcam_rtsp.c
 msgid "Unable to allocate scaling context."
-msgstr ""
+msgstr "Skaalauskontekstin varaaminen epäonnistui."
 
-#: netcam_rtsp.c:765
+#: src/netcam_rtsp.c
 msgid "Error determining size of frame out"
-msgstr ""
+msgstr "Virhe määritettäessä kehyksen kokoa ulos"
 
-#: netcam_rtsp.c:783
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Setting http input_format mjpeg"
-msgstr ""
+msgstr "%s: http-sisääntulomuodon asettaminen mjpeg"
 
-#: netcam_rtsp.c:794
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Setting rtsp transport to tcp"
-msgstr ""
+msgstr "%s: rtsp-siirron asettaminen TCP: hen"
 
-#: netcam_rtsp.c:800
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Setting rtsp transport to udp"
-msgstr ""
+msgstr "%s: Aseta rtsp-siirto udp-arvoon"
 
-#: netcam_rtsp.c:812
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Setting attributes to read file"
-msgstr ""
+msgstr "%s: määritteiden määrittäminen tiedostojen lukemiseen"
 
-#: netcam_rtsp.c:865
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Requested v4l2_palette option: %d"
-msgstr ""
+msgstr "%s: Pyydetty v4l2-palettivaihtoehto: %d"
 
-#: netcam_rtsp.c:868
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Requested FOURCC code: %s"
-msgstr ""
+msgstr "%s: Pyydetty FOURCC-koodi: %s"
 
-#: netcam_rtsp.c:870
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Setting v4l2 input_format: %s"
-msgstr ""
+msgstr "%s: v4l2-syöttömuodon asettaminen: %s"
 
-#: netcam_rtsp.c:872
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Setting v4l2 framerate: %s"
-msgstr ""
+msgstr "%s: v4l2-kehyksen asettaminen: %s"
 
-#: netcam_rtsp.c:874
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Setting v4l2 video_size: %s"
-msgstr ""
+msgstr "%s: v4l2-videokoon asettaminen: %s"
 
-#: netcam_rtsp.c:898
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Proxies not supported using for %s"
-msgstr ""
+msgstr "Välityspalvelimia ei tueta %s: lle"
 
-#: netcam_rtsp.c:911
+#: src/netcam_rtsp.c
 msgid "Setting up v4l2 via ffmpeg netcam"
-msgstr ""
+msgstr "V4l2: n asettaminen ffmpeg netcamin kautta"
 
-#: netcam_rtsp.c:916
+#: src/netcam_rtsp.c
 msgid "Setting up file via ffmpeg netcam"
-msgstr ""
+msgstr "Tiedoston asettaminen ffmpeg netcamin kautta"
 
-#: netcam_rtsp.c:921
+#: src/netcam_rtsp.c
 msgid "Setting up http via ffmpeg netcam"
-msgstr ""
+msgstr "Http: n asettaminen ffmpeg netcamin kautta"
 
-#: netcam_rtsp.c:924
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Setting up %s via ffmpeg netcam"
-msgstr ""
+msgstr "%s: n asettaminen ffmpeg netcamin kautta"
 
-#: netcam_rtsp.c:952
+#: src/netcam_rtsp.c
 msgid "High resolution"
-msgstr ""
+msgstr "Korkea resoluutio"
 
-#: netcam_rtsp.c:956
+#: src/netcam_rtsp.c
 msgid "Normal resolution"
-msgstr ""
+msgstr "Normaali tarkkuus"
 
-#: netcam_rtsp.c:959
+#: src/netcam_rtsp.c
 #, c-format
 msgid "Setting up %s stream."
-msgstr ""
+msgstr "%s-virran määrittäminen."
 
-#: netcam_rtsp.c:978
+#: src/netcam_rtsp.c
 msgid "Unknown"
-msgstr ""
+msgstr "Tuntematon"
 
-#: netcam_rtsp.c:1068 netcam_rtsp.c:1089
+#: src/netcam_rtsp.c
 msgid "Stream copied for pass-through"
-msgstr ""
+msgstr "Stream kopioitu läpikulkua varten"
 
-#: netcam_rtsp.c:1093
+#: src/netcam_rtsp.c
 msgid "ffmpeg too old"
-msgstr ""
+msgstr "ffmpeg liian vanha"
 
-#: netcam_rtsp.c:1108
+#: src/netcam_rtsp.c
 msgid "Null path passed to connect"
-msgstr ""
+msgstr "Null polku kulunut yhteyden muodostamiseksi"
 
-#: netcam_rtsp.c:1138
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Invalid camera service"
-msgstr ""
+msgstr "%s: Virheellinen kamerapalvelu"
 
-#: netcam_rtsp.c:1149
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Unable to open camera(%s)"
-msgstr ""
+msgstr "%s: kameraa ei voi avata ( %s)"
 
-#: netcam_rtsp.c:1162
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Unable to open camera(%s): %s"
-msgstr ""
+msgstr "%s: Kameraa ei voi avata ( %s): %s"
 
-#: netcam_rtsp.c:1171
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Opened camera(%s)"
-msgstr ""
+msgstr "%s: avattu kamera ( %s)"
 
-#: netcam_rtsp.c:1179
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Unable to find stream info: %s"
-msgstr ""
+msgstr "%s: stream-tietoja ei löydy: %s"
 
-#: netcam_rtsp.c:1202
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Unable to open codec context: %s"
-msgstr ""
+msgstr "%s: koodekkikontekstin avaaminen epäonnistui: %s"
 
-#: netcam_rtsp.c:1212
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Camera image size is invalid"
-msgstr ""
+msgstr "%s: Kameran kuvan koko on virheellinen"
 
-#: netcam_rtsp.c:1228
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Unable to allocate frame."
-msgstr ""
+msgstr "%s: Kehystä ei voida allokoida."
 
-#: netcam_rtsp.c:1239
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Failed to copy stream for pass-through."
-msgstr ""
+msgstr "%s: streamin kopiointi epäonnistui."
 
-#: netcam_rtsp.c:1251
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Failed to read first image"
-msgstr ""
+msgstr "%s: Ensimmäisen kuvan lukeminen epäonnistui"
 
-#: netcam_rtsp.c:1278
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Camera (%s) connected"
-msgstr ""
+msgstr "%s: Kamera ( %s) kytketty"
 
-#: netcam_rtsp.c:1357
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Reconnecting with camera...."
-msgstr ""
+msgstr "%s: Yhdistetään uudelleen kameraan ...."
 
-#: netcam_rtsp.c:1395
+#: src/netcam_rtsp.c
+#, c-format
+msgid "%s: Camera did not reconnect."
+msgstr "%s: Kamera ei muodostanut yhteyttä uudelleen."
+
+#: src/netcam_rtsp.c
+#, c-format
+msgid "%s: Checking for camera every 10 seconds."
+msgstr "%s: Tarkista kamera 10 sekunnin välein."
+
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Camera handler thread [%d] started"
-msgstr ""
+msgstr "%s: Kameran käsittelijälanka [ %d] alkoi"
 
-#: netcam_rtsp.c:1420
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Handler loop finished."
-msgstr ""
+msgstr "%s: Käsittelijän silmukka valmis."
 
-#: netcam_rtsp.c:1455
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Error starting handler thread"
-msgstr ""
+msgstr "%s: Virhe käynnistettäessä käsittelijän ketjua"
 
-#: netcam_rtsp.c:1474
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Waiting for first image from the handler."
-msgstr ""
+msgstr "%s: Odotetaan ensimmäistä kuvaa käsittelijältä."
 
-#: netcam_rtsp.c:1511
+#: src/netcam_rtsp.c
+#, c-format
+msgid "Requested frame rate %d FPS is less than camera frame rate %d FPS"
+msgstr "Pyydetty kuvanopeus %d FPS on pienempi kuin kameran kuvanopeus %d FPS"
+
+#: src/netcam_rtsp.c
+#, c-format
+msgid "Increasing capture rate to %d FPS to match camera."
+msgstr "Nostamisnopeuden lisääminen %d FPS: iin vastaamaan kameraa."
+
+#: src/netcam_rtsp.c
+msgid "To lower CPU, change camera FPS to lower rate and decrease I frame interval."
+msgstr ""
+"Laskeaksesi CPU: ta, vaihda kameran FPS pienempään nopeuteen ja pienennä I-kehysväliä."
+
+#: src/netcam_rtsp.c
 msgid "unable to create rtsp context"
-msgstr ""
+msgstr "ei voi luoda rtsp-kontekstia"
 
-#: netcam_rtsp.c:1520
+#: src/netcam_rtsp.c
 msgid "unable to create rtsp high context"
-msgstr ""
+msgstr "ei voi luoda rtsp-korkeaa kontekstia"
 
-#: netcam_rtsp.c:1564 netcam_rtsp.c:1608 netcam_rtsp.c:1689
+#: src/netcam_rtsp.c
 msgid "FFmpeg/Libav not found on computer.  No RTSP support"
-msgstr ""
+msgstr "FFmpeg / Libavia ei löydy tietokoneesta. Ei RTSP-tukea"
 
-#: netcam_rtsp.c:1638
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: Shutting down network camera."
-msgstr ""
+msgstr "%s: Verkkokameran sammuttaminen."
 
-#: netcam_rtsp.c:1653
+#: src/netcam_rtsp.c
 #, c-format
 msgid "%s: No response from handler thread."
-msgstr ""
+msgstr "%s: Ei vastausta käsittelijän säiettä."
 
-#: netcam_rtsp.c:1675
+#: src/netcam_rtsp.c
 msgid "Normal resolution: Shut down complete."
-msgstr ""
+msgstr "Normaali resoluutio: Sammuta."
 
-#: netcam_rtsp.c:1678
+#: src/netcam_rtsp.c
 msgid "High resolution: Shut down complete."
-msgstr ""
+msgstr "Korkea resoluutio: Sammuta."
 
-#: picture.c:448
+#: src/picture.c
 msgid "Unable to set set EXIF to webp chunk"
-msgstr ""
+msgstr "Ei voida asettaa asettaa EXIF-arvoa webp-kappaleeseen"
 
-#: picture.c:623 picture.c:630
+#: src/picture.c
 msgid "libwebp version error"
-msgstr ""
+msgstr "libwebp-version virhe"
 
-#: picture.c:638
+#: src/picture.c
 msgid "libwebp image buffer allocation error"
-msgstr ""
+msgstr "libwebp-kuvapuskurin allokointivirhe"
 
-#: picture.c:655
+#: src/picture.c
 msgid "libwebp image compression error"
-msgstr ""
+msgstr "libwebp-kuvan pakkausvirhe"
 
-#: picture.c:670
+#: src/picture.c
 msgid "unable to assemble webp image"
-msgstr ""
+msgstr "ei voi koota webp-kuvaa"
 
-#: picture.c:675
+#: src/picture.c
 msgid "unable to save webp image to file"
-msgstr ""
+msgstr "Webp-kuvaa ei voi tallentaa tiedostoon"
 
-#: picture.c:1110
+#: src/picture.c
 #, c-format
 msgid ""
 "Can't write picture to file %s - check access rights to target directory\n"
 "Thread is going to finish due to this fatal error"
 msgstr ""
+"Kuvaa ei voi kirjoittaa tiedostoon %s - tarkista käyttöoikeudet kohdehakemistoon \n"
+"Ketju loppuu tämän kohtalokkaan virheen vuoksi"
 
-#: picture.c:1118
+#: src/picture.c
 #, c-format
 msgid "Can't write picture to file %s"
-msgstr ""
+msgstr "Kuvaa ei voi kirjoittaa tiedostoon %s"
 
-#: picture.c:1142
+#: src/picture.c
 msgid "Could not read from pgm file"
-msgstr ""
+msgstr "Ei voitu lukea pgm-tiedostosta"
 
-#: picture.c:1148
+#: src/picture.c
 #, c-format
 msgid "This is not a pgm file, starts with '%s'"
-msgstr ""
+msgstr "Tämä ei ole pgm-tiedosto, alkaa ' %s'"
 
-#: picture.c:1161
+#: src/picture.c
 msgid "Failed reading size in pgm file"
-msgstr ""
+msgstr "Lukukoko pgm-tiedostossa epäonnistui"
 
-#: picture.c:1173
+#: src/picture.c
 msgid "Failed reading maximum value in pgm file"
-msgstr ""
+msgstr "Pgm-tiedoston enimmäisarvon lukeminen epäonnistui"
 
-#: picture.c:1196
+#: src/picture.c
+msgid "Failed reading image data from pgm file"
+msgstr "Kuvatietojen lukeminen epäonnistui pgm-tiedostosta"
+
+#: src/picture.c
 msgid "The mask file specified is not the same size as image from camera."
-msgstr ""
+msgstr "Määritetty maskitiedosto ei ole samankokoinen kuin kamerasta tuleva kuva."
 
-#: picture.c:1198
+#: src/picture.c
 #, c-format
 msgid "Attempting to resize mask image from %dx%d to %dx%d"
-msgstr ""
+msgstr "Yritetään muuttaa maskin kuvan kokoa %dx %d - %dx %d"
 
-#: picture.c:1235
+#: src/picture.c
 #, c-format
 msgid "can't write mask file %s - check access rights to target directory"
-msgstr ""
+msgstr "ei voi kirjoittaa maskitiedostoa %s - tarkista kohdehakemiston käyttöoikeudet"
 
-#: picture.c:1240
+#: src/picture.c
 #, c-format
 msgid "can't write mask file %s"
-msgstr ""
+msgstr "maskitiedostoa %s ei voi kirjoittaa"
 
-#: picture.c:1254
+#: src/picture.c
 msgid "Failed writing default mask as pgm file"
-msgstr ""
+msgstr "Oletusmaskin kirjoittaminen epäonnistui pgm-tiedostona"
 
-#: picture.c:1261
+#: src/picture.c
 #, c-format
 msgid ""
 "Creating empty mask %s\n"
 "Please edit this file and re-run motion to enable mask feature"
 msgstr ""
+"Luodaan tyhjä maski %s \n"
+"Muokkaa tätä tiedostoa ja suorita liike uudelleen, jotta maskiominaisuus otetaan "
+"käyttöön"
 
-#: rotate.c:203
+#: src/rotate.c
 #, c-format
 msgid "Config option \"rotate\" not a multiple of 90: %d"
-msgstr ""
+msgstr "Konfigurointivaihtoehto \"kiertäminen \" ei ole 90: n monikerta: %d"
 
-#: stream.c:82
-msgid "set socket timeout failed"
-msgstr ""
-
-#: stream.c:132
-msgid "motion-stream End buffer reached waiting for buffer ending"
-msgstr ""
-
-#: stream.c:150
-msgid "motion-stream READ give up!"
-msgstr ""
-
-#: stream.c:247 stream.c:602
-#, c-format
-msgid "motion-stream - failed auth attempt from %s"
-msgstr ""
-
-#: stream.c:257 stream.c:628 stream.c:713 stream.c:719
-msgid "fcntl"
-msgstr ""
-
-#: stream.c:277
-msgid "write failure 1:handle_basic_auth"
-msgstr ""
-
-#: stream.c:478
-msgid "Error no authentication data"
-msgstr ""
-
-#: stream.c:485
-msgid "Error no authentication data (no ':' found)"
-msgstr ""
-
-#: stream.c:494
-msgid "Error malloc failed"
-msgstr ""
-
-#: stream.c:618
-msgid "write failure 1:handle_md5_digest"
-msgstr ""
-
-#: stream.c:621
-msgid "write failure 2:handle_md5_digest"
-msgstr ""
-
-#: stream.c:654
-msgid "write failure 3:handle_md5_digest"
-msgstr ""
-
-#: stream.c:698
-msgid "Error unknown stream authentication method"
-msgstr ""
-
-#: stream.c:727
-msgid "Error pthread_attr_init"
-msgstr ""
-
-#: stream.c:732
-msgid "Error pthread_create"
-msgstr ""
-
-#: stream.c:738
-msgid "Error pthread_attr_destroy"
-msgstr ""
-
-#: stream.c:762
-msgid "error creating socket"
-msgstr ""
-
-#: stream.c:767
-msgid "Unable to set FD_CLOEXEC"
-msgstr ""
-
-#: stream.c:774
-msgid "setting SO_REUSEADDR to yes failed"
-msgstr ""
-
-#: stream.c:783
-msgid "setting IPV6_V6ONLY to no failed"
-msgstr ""
-
-#: stream.c:821
-#, c-format
-msgid "error binding on %s port %d"
-msgstr ""
-
-#: stream.c:827
-msgid "error listening"
-msgstr ""
-
-#: stream.c:833
-#, c-format
-msgid "listening on %s port %d"
-msgstr ""
-
-#: stream.c:852
-msgid "motion-stream accept()"
-msgstr ""
-
-#: stream.c:1017 stream.c:1033
-msgid "Error creating tmpbuffer in stream_add_client"
-msgstr ""
-
-#: stream.c:1132
-msgid "Error allocated cors_header in stream_init"
-msgstr ""
-
-#: stream.c:1154
-msgid "Closing motion-stream listen socket & active motion-stream sockets"
-msgstr ""
-
-#: stream.c:1175
-msgid "Closed motion-stream listen socket & active motion-stream sockets"
-msgstr ""
-
-#: stream.c:1309
-msgid "Error creating tmpbuffer"
-msgstr ""
-
-#: track.c:81
+#: src/track.c
 msgid "internal error"
-msgstr ""
+msgstr "sisäinen virhe"
 
-#: track.c:107 track.c:140
+#: src/track.c
 #, c-format
 msgid "internal error, %hu is not a known track-type"
-msgstr ""
+msgstr "sisäinen virhe, %hu ei ole tunnettu raidatyyppi"
 
-#: track.c:163 track.c:362
+#: src/track.c
 #, c-format
 msgid "port %s dev fd %i, motor %hu command %hu data %hu"
-msgstr ""
+msgstr "portti %s dev fd %i, moottori %hu komento %hu data %hu"
 
-#: track.c:171 track.c:370
+#: src/track.c
 msgid "Status byte timeout!"
-msgstr ""
+msgstr "Tilatavun aikakatkaisu!"
 
-#: track.c:191
+#: src/track.c
 #, c-format
 msgid "Try to open serial device %s"
-msgstr ""
+msgstr "Yritä avata sarjalaite %s"
 
-#: track.c:195 track.c:317 track.c:698
+#: src/track.c
 #, c-format
 msgid "Unable to open serial device %s"
-msgstr ""
+msgstr "Sarjalaitetta %s ei voitu avata"
 
-#: track.c:210 track.c:332 track.c:712
+#: src/track.c
 #, c-format
 msgid "Unable to initialize serial device %s"
-msgstr ""
+msgstr "Sarjalaitetta %s ei voi alustaa"
 
-#: track.c:215 track.c:338
+#: src/track.c
 #, c-format
 msgid "Opened serial device %s and initialize, fd %i"
-msgstr ""
+msgstr "Avattu sarjalaite %s ja alustaa, fd %i"
 
-#: track.c:253
+#: src/track.c
 #, c-format
 msgid "No device %s started yet , trying stepper_center()"
-msgstr ""
+msgstr "Laitetta %s ei ole vielä käynnistetty, yritetään stepper-keskustaa ()"
 
-#: track.c:258
+#: src/track.c
 #, c-format
 msgid "failed to initialize stepper device on %s , fd [%i]."
-msgstr ""
+msgstr "epäonnistui asettamaan askellaitetta %s, fd [ %i]."
 
-#: track.c:264
+#: src/track.c
 #, c-format
 msgid "succeed , device started %s , fd [%i]"
-msgstr ""
+msgstr "onnistunut, laite käynnistyi %s, fd [ %i]"
 
-#: track.c:357
+#: src/track.c
 #, c-format
 msgid "SENDS port %s dev fd %i, motor %hu command %hu data %hu"
-msgstr ""
+msgstr "LÄHETÄ portti %s dev fd %i, moottori %hu komento %hu data %hu"
 
-#: track.c:375
+#: src/track.c
 #, c-format
 msgid "Command return %d"
-msgstr ""
+msgstr "Komennon palautus %d"
 
-#: track.c:407 track.c:600
+#: src/track.c
 msgid "Problem opening servo!"
-msgstr ""
+msgstr "Ongelma servon avaamisessa!"
 
-#: track.c:413
+#: src/track.c
 #, c-format
 msgid "cent->x %d, cent->y %d, reversex %d, reversey %d manual %d"
-msgstr ""
+msgstr "cent-> x %d, cent-> y %d, käänteinen %d, käänteinen %d manuaalinen %d"
 
-#: track.c:436 track.c:506
+#: src/track.c
 #, c-format
 msgid "x %d value out of range! (%d - %d)"
-msgstr ""
+msgstr "x %d arvo alueen ulkopuolella! ( %d - %d)"
 
-#: track.c:462 track.c:555
+#: src/track.c
 #, c-format
 msgid "y %d value out of range! (%d - %d)"
-msgstr ""
+msgstr "y %d arvo alueen ulkopuolella! ( %d - %d)"
 
-#: track.c:494
+#: src/track.c
 #, c-format
 msgid "X offset %d"
-msgstr ""
+msgstr "X-siirto %d"
 
-#: track.c:517
+#: src/track.c
 #, c-format
-msgid ""
-"X cent->x %d, cent->y %d, reversex %d,reversey %d motorx %d data %d command "
-"%d"
+msgid "X cent->x %d, cent->y %d, reversex %d,reversey %d motorx %d data %d command %d"
 msgstr ""
+"X cent-> x %d, cent-> y %d, käänteinen %d, käänteinen %d motorx %d data %d komento%d"
 
-#: track.c:543
+#: src/track.c
 #, c-format
 msgid "Y offset %d"
-msgstr ""
+msgstr "Y siirtymä %d"
 
-#: track.c:565
+#: src/track.c
+#, c-format
+msgid "Y cent->x %d, cent->y %d, reversex %d,reversey %d motory %d data %d command %d"
+msgstr ""
+"Y cent-> x %d, cent-> y %d, käänteinen %d, käänteinen %d motiivi %d data %d komento%d"
+
+#: src/track.c
 #, c-format
 msgid ""
-"Y cent->x %d, cent->y %d, reversex %d,reversey %d motory %d data %d command "
-"%d"
+"X-offset %d, Y-offset %d, x-position %d. y-position %d,reversex %d, reversey %d , "
+"stepsize %d"
 msgstr ""
+"X-siirtymä %d, Y-siirtymä %d, x-sijainti %d. y-asema %d, käänteinen %d, käänteinen%d, "
+"asteikko %d"
 
-#: track.c:606
-#, c-format
-msgid ""
-"X-offset %d, Y-offset %d, x-position %d. y-position %d,reversex %d, reversey "
-"%d , stepsize %d"
-msgstr ""
-
-#: track.c:660
+#: src/track.c
 msgid "Return byte timeout!"
-msgstr ""
+msgstr "Palauta tavu aikakatkaisu!"
 
-#: track.c:677
+#: src/track.c
 msgid "Unable to set camera speed"
-msgstr ""
+msgstr "Kameran nopeutta ei voida asettaa"
 
-#: track.c:749 track.c:868
+#: src/track.c
 msgid "succeed"
-msgstr ""
+msgstr "menestyä"
 
-#: track.c:830
+#: src/track.c
 msgid "Failed to reset pwc camera to starting position! Reason"
-msgstr ""
+msgstr "Pwc-kameran nollaus lähtöasentoon epäonnistui! Syy"
 
-#: track.c:838 track.c:900
+#: src/track.c
 msgid "failed VIDIOCPWCMPTGRANGE"
-msgstr ""
+msgstr "epäonnistui VIDIOCPWCMPTGRANGE"
 
-#: track.c:852 track.c:913
+#: src/track.c
 msgid "ioctl VIDIOCPWCMPTGANGLE"
-msgstr ""
+msgstr "ioctl VIDIOCPWCMPTGANGLE"
 
-#: track.c:864 track.c:939
+#: src/track.c
 msgid "Failed to pan/tilt pwc camera! Reason"
-msgstr ""
+msgstr "Pwc-kameran panorointi / kallistaminen epäonnistui! Syy"
 
-#: track.c:978 track.c:987 track.c:1138 track.c:1147
+#: src/track.c
 msgid "Failed to reset UVC camera to starting position! Reason"
-msgstr ""
+msgstr "UVC-kameran nollaus lähtöasentoon epäonnistui! Syy"
 
-#: track.c:992 track.c:1152
+#: src/track.c
 msgid "Reseting UVC camera to starting position"
-msgstr ""
+msgstr "UVC-kameran palauttaminen lähtöasentoon"
 
-#: track.c:1001
+#: src/track.c
 msgid "ioctl querycontrol"
-msgstr ""
+msgstr "ioctl kyselykontrolli"
 
-#: track.c:1005
+#: src/track.c
 msgid "Getting camera range"
-msgstr ""
+msgstr "Kameran valikoiman saaminen"
 
-#: track.c:1033
+#: src/track.c
 #, c-format
 msgid "INPUT_PARAM_ABS pan_min %d,pan_max %d,tilt_min %d,tilt_max %d "
 msgstr ""
+"INPUT PARAM ABS panorointi min %d, pannu max %d, kallistus min %d, kallistus max %d"
 
-#: track.c:1036
+#: src/track.c
 #, c-format
 msgid "INPUT_PARAM_ABS X_Angel %d, Y_Angel %d "
-msgstr ""
+msgstr "INPUT PARAM ABS X Angel %d, Y Angel %d"
 
-#: track.c:1056
+#: src/track.c
 #, c-format
 msgid "For_SET_ABS move_X %d,move_Y %d"
-msgstr ""
+msgstr "SET ABS -liikkeessä siirrä X %d, siirrä Y %d"
 
-#: track.c:1070 track.c:1085 track.c:1254 track.c:1275
+#: src/track.c
 msgid "Failed to move UVC camera!"
-msgstr ""
+msgstr "UVC-kameran siirtäminen epäonnistui!"
 
-#: track.c:1091 track.c:1281
+#: src/track.c
 #, c-format
 msgid "Found MINMAX = %d"
-msgstr ""
+msgstr "Löydetty MINMAX = %d"
 
-#: track.c:1095
+#: src/track.c
 #, c-format
 msgid "Before_ABS_Y_Angel : x= %d , Y= %d, "
-msgstr ""
+msgstr "Ennen ABS Y Angel: x = %d, Y = %d,"
 
-#: track.c:1107
+#: src/track.c
 #, c-format
 msgid "After_ABS_Y_Angel : x= %d , Y= %d"
-msgstr ""
+msgstr "ABS Y Angelin jälkeen: x = %d, Y = %d"
 
-#: track.c:1220
+#: src/track.c
 #, c-format
 msgid "For_SET_REL pan_min %d,pan_max %d,tilt_min %d,tilt_max %d"
-msgstr ""
+msgstr "SET REL -pannulla min %d, pannulla max %d, kallistus min %d, kallistus max %d"
 
-#: track.c:1223
+#: src/track.c
 #, c-format
 msgid "For_SET_REL track_pan_Angel %d, track_tilt_Angel %d"
-msgstr ""
+msgstr "Aseta SET REL -raidan enkeli %d, raidan kallistus enkeli %d"
 
-#: track.c:1226
+#: src/track.c
 #, c-format
 msgid "For_SET_REL move_X %d,move_Y %d"
-msgstr ""
+msgstr "Aseta SET REL X %d, siirrä Y %d"
 
-#: track.c:1249
+#: src/track.c
 #, c-format
 msgid " dev %d, addr= %d, control_S= %d, Wert= %d"
-msgstr ""
+msgstr "dev %d, addr = %d, kontrolli S = %d, Wert = %d"
 
-#: track.c:1270
+#: src/track.c
 #, c-format
 msgid " dev %d,addr= %d, control_S= %d, Wert= %d"
-msgstr ""
+msgstr "dev %d, addr = %d, kontrolli S = %d, Wert = %d"
 
-#: track.c:1285
+#: src/track.c
 #, c-format
 msgid "Before_REL_Y_Angel : x= %d , Y= %d"
-msgstr ""
+msgstr "Ennen REL Y Angel: x = %d, Y = %d"
 
-#: track.c:1295
+#: src/track.c
 #, c-format
 msgid "After_REL_Y_Angel : x= %d , Y= %d"
-msgstr ""
+msgstr "REL Y: n jälkeen: x = %d, Y = %d"
 
-#: translate.c:43
+#: src/translate.c
 msgid "Language: English"
-msgstr ""
+msgstr "Kieli: englanti"
 
-#: video_bktr.c:65
+#: src/video_bktr.c
 #, c-format
 msgid "METEORSHUE Error setting hue [%d]"
-msgstr ""
+msgstr "METEORSHUE Virhe värisävyn asettamisessa [ %d]"
 
-#: video_bktr.c:69 video_bktr.c:82 video_bktr.c:97 video_bktr.c:111
-#: video_bktr.c:126 video_bktr.c:140 video_bktr.c:156 video_bktr.c:171
+#: src/video_bktr.c
 #, c-format
 msgid "to [%d]"
-msgstr ""
+msgstr "- [ %d]"
 
-#: video_bktr.c:78
+#: src/video_bktr.c
 msgid "METEORGHUE Error getting hue"
-msgstr ""
+msgstr "METEORGHUE Virhe värisävyssä"
 
-#: video_bktr.c:93
+#: src/video_bktr.c
 #, c-format
 msgid "METEORSCSAT Error setting saturation [%d]"
-msgstr ""
+msgstr "METEORSCSAT Virhe kylläisyyden asettamisessa [ %d]"
 
-#: video_bktr.c:107
+#: src/video_bktr.c
 msgid "METEORGCSAT Error getting saturation"
-msgstr ""
+msgstr "METEORGCSAT Virhe värikylläisyydessä"
 
-#: video_bktr.c:122
+#: src/video_bktr.c
 #, c-format
 msgid "METEORSCONT Error setting contrast [%d]"
-msgstr ""
+msgstr "METEORSCONT Virhe kontrastin asettamisessa [ %d]"
 
-#: video_bktr.c:136
+#: src/video_bktr.c
 msgid "METEORGCONT Error getting contrast"
-msgstr ""
+msgstr "METEORGCONT Virhe kontrastin saavuttamisessa"
 
-#: video_bktr.c:152
+#: src/video_bktr.c
 #, c-format
 msgid "METEORSBRIG  brightness [%d]"
-msgstr ""
+msgstr "METEORSBRIG-kirkkaus [ %d]"
 
-#: video_bktr.c:167
+#: src/video_bktr.c
 msgid "METEORGBRIG  getting brightness"
-msgstr ""
+msgstr "METEORGBRIG saadaan kirkkautta"
 
-#: video_bktr.c:182
+#: src/video_bktr.c
 msgid "Not implemented"
-msgstr ""
+msgstr "Ei toteutettu"
 
-#: video_bktr.c:218
+#: src/video_bktr.c
 #, c-format
 msgid "Device Input %d out of range (0-4)"
-msgstr ""
+msgstr "Laitetulo %d alueen ulkopuolella (0–4)"
 
-#: video_bktr.c:226
+#: src/video_bktr.c
 #, c-format
 msgid "METEORSINPUT %d invalid -Trying composite %d"
-msgstr ""
+msgstr "METEORSINPUT %d virheellinen - Koostumuksen %d kokeilu"
 
-#: video_bktr.c:261
+#: src/video_bktr.c
 msgid "BT848SFMT, Couldn't set the input format, try again with default"
-msgstr ""
+msgstr "BT848SFMT, Syöttömuotoa ei voitu asettaa, yritä uudelleen oletusasetuksella"
 
-#: video_bktr.c:267
+#: src/video_bktr.c
 msgid "BT848SFMT, Couldn't set the input format either default"
-msgstr ""
+msgstr "BT848SFMT, Syöttömuotoa ei voitu asettaa oletusarvoksi"
 
-#: video_bktr.c:321
+#: src/video_bktr.c
 msgid "Couldn't set the geometry"
-msgstr ""
+msgstr "Geometriaa ei voitu asettaa"
 
-#: video_bktr.c:325
+#: src/video_bktr.c
 #, c-format
 msgid "to [%d/%d] Norm %d"
-msgstr ""
+msgstr "- [ %d / %d] Normi %d"
 
-#: video_bktr.c:372
+#: src/video_bktr.c
 #, c-format
 msgid "Not valid Frequency [%lu] for Source input [%i]"
-msgstr ""
+msgstr "Ei kelpaa taajuus [ %lu] lähdetulolle [ %i]"
 
-#: video_bktr.c:376
+#: src/video_bktr.c
 #, c-format
 msgid "Frequency [%lu] Source input [%i]"
-msgstr ""
+msgstr "Taajuus [ %lu] Lähteen tulo [ %i]"
 
-#: video_bktr.c:383
+#: src/video_bktr.c
 #, c-format
 msgid "set input [%d]"
-msgstr ""
+msgstr "aseta tulo [ %d]"
 
-#: video_bktr.c:391
+#: src/video_bktr.c
 #, c-format
 msgid "set input format [%d]"
-msgstr ""
+msgstr "aseta syöttömuoto [ %d]"
 
-#: video_bktr.c:399
+#: src/video_bktr.c
 #, c-format
 msgid "set geometry [%d]x[%d]"
-msgstr ""
+msgstr "asetettu geometria [ %d] x [ %d]"
 
-#: video_bktr.c:405
+#: src/video_bktr.c
 msgid "Frequency set (no implemented yet"
-msgstr ""
+msgstr "Taajuus asetettu (ei vielä toteutettu"
 
-#: video_bktr.c:419 video_bktr.c:432
+#: src/video_bktr.c
 msgid "Sizing buffer to 3x"
-msgstr ""
+msgstr "Puskurin mitoitus 3x: ksi"
 
-#: video_bktr.c:426 video_bktr.c:436
+#: src/video_bktr.c
 msgid "Sizing buffer to 3/2x"
-msgstr ""
+msgstr "Puskurin mitoitus 3 / 2x"
 
-#: video_bktr.c:444
+#: src/video_bktr.c
 msgid "mmap failed"
-msgstr ""
+msgstr "mmap epäonnistui"
 
-#: video_bktr.c:486 video_bktr.c:488 video_bktr.c:496
+#: src/video_bktr.c
 msgid "METEORCAPTUR using single method Error capturing"
-msgstr ""
+msgstr "METEORCAPTUR käyttäen yhtä menetelmää Virhe kaappaamisessa"
 
-#: video_bktr.c:568
+#: src/video_bktr.c
 msgid "Error capturing using single method"
-msgstr ""
+msgstr "Virhe kaappaamisessa yhdellä menetelmällä"
 
-#: video_bktr.c:658 video_bktr.c:666 video_bktr.c:764 video_bktr.c:933
-#: video_bktr.c:987
+#: src/video_bktr.c
 msgid "BKTR is not enabled."
-msgstr ""
+msgstr "BKTR ei ole käytössä."
 
-#: video_bktr.c:710 video_v4l2.c:1454
+#: src/video_bktr.c src/video_v4l2.c
 msgid "Unable to find video device"
-msgstr ""
+msgstr "Videolaitetta ei löydy"
 
-#: video_bktr.c:716 video_v4l2.c:1460
+#: src/video_bktr.c src/video_v4l2.c
 #, c-format
 msgid "Closing video device %s"
-msgstr ""
+msgstr "Videolaitteen %s sulkeminen"
 
-#: video_bktr.c:750 video_v4l2.c:1479
+#: src/video_bktr.c src/video_v4l2.c
 #, c-format
 msgid "Still %d users of video device %s, so we don't close it now"
-msgstr ""
+msgstr "Vielä %d videolaitteen %s käyttäjää, joten emme sulje sitä nyt"
 
-#: video_bktr.c:790 video_v4l2.c:774
+#: src/video_bktr.c src/video_v4l2.c
 #, c-format
 msgid "config image width (%d) is not modulo 8"
-msgstr ""
+msgstr "konfig. kuvan leveys ( %d) ei ole modulo 8"
 
-#: video_bktr.c:796 video_v4l2.c:782
+#: src/video_bktr.c src/video_v4l2.c
 #, c-format
 msgid "config image height (%d) is not modulo 8"
-msgstr ""
+msgstr "konfig. kuvan korkeus ( %d) ei ole modulo 8"
 
-#: video_bktr.c:836
+#: src/video_bktr.c
 msgid "Stopping capture"
-msgstr ""
+msgstr "Kaappauksen lopettaminen"
 
-#: video_bktr.c:841
+#: src/video_bktr.c
 #, c-format
 msgid "Reusing [%s] inputs [%d,%d] Change capture method METEOR_CAP_SINGLE"
-msgstr ""
+msgstr "[ %s] -tulojen uudelleenkäyttö [ %d, %d] Vaihda sieppaustapa METEOR CAP SINGLE"
 
-#: video_bktr.c:849
+#: src/video_bktr.c
 msgid "VIDEO_PALETTE_YUV420P setting imgs.size_norm and imgs.motionsize"
-msgstr ""
+msgstr "VIDEO PALETTE YUV420P -asetus imgs.size norm ja imgs.motionsize"
 
-#: video_bktr.c:866
+#: src/video_bktr.c
 #, c-format
 msgid "open video device %s"
-msgstr ""
+msgstr "avaa videolaite %s"
 
-#: video_bktr.c:877
+#: src/video_bktr.c
 #, c-format
 msgid "open tuner device %s"
-msgstr ""
+msgstr "avoin viritinlaite %s"
 
-#: video_common.c:421 video_common.c:443
+#: src/video_common.c
 msgid "Corrupt image ... continue"
-msgstr ""
+msgstr "Vioittunut kuva ... jatka"
 
-#: video_common.c:434
+#: src/video_common.c
 #, c-format
 msgid "SOI position adjusted by %d bytes."
-msgstr ""
+msgstr "SOI-asema säädetään %d tavulla."
 
-#: video_common.c:580
+#: src/video_common.c
 #, c-format
 msgid "Parsing controls: %s"
-msgstr ""
+msgstr "Ohjainten jäsentäminen: %s"
 
-#: video_common.c:689
+#: src/video_common.c
 msgid "calling mmalcam_cleanup"
-msgstr ""
+msgstr "kutsutaan mmalcam-siivousta"
 
-#: video_common.c:697
+#: src/video_common.c
 msgid "calling netcam_cleanup"
-msgstr ""
+msgstr "kutsutaan netcam-siivousta"
 
-#: video_common.c:705
+#: src/video_common.c
 msgid "calling netcam_rtsp_cleanup"
-msgstr ""
+msgstr "kutsutaan netcam rtsp -puhdistusta"
 
-#: video_common.c:711
+#: src/video_common.c
 msgid "Cleaning up V4L2 device"
-msgstr ""
+msgstr "V4L2-laitteen puhdistaminen"
 
-#: video_common.c:717
+#: src/video_common.c
 msgid "Cleaning up BKTR device"
-msgstr ""
+msgstr "BKTR-laitteen puhdistaminen"
 
-#: video_common.c:722
+#: src/video_common.c
 msgid "No Camera device cleanup (MMAL, Netcam, V4L2, BKTR)"
-msgstr ""
+msgstr "Ei kameralaitteen puhdistusta (MMAL, Netcam, V4L2, BKTR)"
 
-#: video_common.c:754
+#: src/video_common.c
 msgid "Opening MMAL cam"
-msgstr ""
+msgstr "MMAL-kameran avaaminen"
 
-#: video_common.c:759
+#: src/video_common.c
 msgid "MMAL cam failed to open"
-msgstr ""
+msgstr "MMAL-kamera ei avautunut"
 
-#: video_common.c:766
+#: src/video_common.c
 msgid "Opening Netcam"
-msgstr ""
+msgstr "Netcamin avaaminen"
 
-#: video_common.c:771
+#: src/video_common.c
 msgid "Netcam failed to open"
-msgstr ""
+msgstr "Netcam ei avautunut"
 
-#: video_common.c:777
+#: src/video_common.c
 msgid "Opening Netcam RTSP"
-msgstr ""
+msgstr "Netcam RTSP: n avaaminen"
 
-#: video_common.c:781
+#: src/video_common.c
 msgid "Netcam RTSP failed to open"
-msgstr ""
+msgstr "Netcam RTSP ei avautunut"
 
-#: video_common.c:787
+#: src/video_common.c
 msgid "Opening V4L2 device"
-msgstr ""
+msgstr "V4L2-laitteen avaaminen"
 
-#: video_common.c:790
+#: src/video_common.c
 msgid "V4L2 device failed to open"
-msgstr ""
+msgstr "V4L2-laite ei avautunut"
 
-#: video_common.c:796
+#: src/video_common.c
 msgid "Opening BKTR device"
-msgstr ""
+msgstr "BKTR-laitteen avaaminen"
 
-#: video_common.c:799
+#: src/video_common.c
 msgid "BKTR device failed to open"
-msgstr ""
+msgstr "BKTR-laite ei avautunut"
 
-#: video_common.c:805
+#: src/video_common.c
 msgid "No Camera device specified (MMAL, Netcam, V4L2, BKTR)"
-msgstr ""
+msgstr "Kameralaitetta ei ole määritetty (MMAL, Netcam, V4L2, BKTR)"
 
-#: video_loopback.c:33
+#: src/video_loopback.c
 #, c-format
 msgid "Failed to open '%s'"
-msgstr ""
+msgstr "%s\": n avaaminen epäonnistu"
 
-#: video_loopback.c:42
+#: src/video_loopback.c
+#, c-format
+msgid "Error specifying buffer: %s"
+msgstr "Puskurin määrittämisessä tapahtui virhe: %s"
+
+#: src/video_loopback.c
 #, c-format
 msgid "Opening buffer: %s"
-msgstr ""
+msgstr "Avauspuskuri: %s"
 
-#: video_loopback.c:49
+#: src/video_loopback.c
 #, c-format
 msgid "Read buffer: %s"
-msgstr ""
+msgstr "Lue puskuri: %s"
 
-#: video_loopback.c:57
+#: src/video_loopback.c
 #, c-format
 msgid "found video device '%s' %d"
-msgstr ""
+msgstr "löydetty videolaite ' %s' %d"
 
-#: video_loopback.c:72 video_loopback.c:147
+#: src/video_loopback.c
 #, c-format
 msgid "Opened %s as pipe output"
-msgstr ""
+msgstr "Avattu %s putken ulostulona"
 
-#: video_loopback.c:151
+#: src/video_loopback.c
 #, c-format
 msgid "Opening %s as pipe output failed"
-msgstr ""
+msgstr "%s: n avaaminen putken lähtönä epäonnistui"
 
-#: video_loopback.c:171
+#: src/video_loopback.c
 msgid "Original pipe specifications"
-msgstr ""
+msgstr "Alkuperäiset putken tekniset tiedot"
 
-#: video_loopback.c:182
+#: src/video_loopback.c
 msgid "Proposed pipe specifications"
-msgstr ""
+msgstr "Ehdotetut putken tekniset tiedot"
 
-#: video_loopback.c:190
+#: src/video_loopback.c
 msgid "Final pipe specifications"
-msgstr ""
+msgstr "Lopulliset putken tekniset tiedot"
 
-#: video_v4l2.c:209
+#: src/video_v4l2.c
 msgid "No Controls found for device"
-msgstr ""
+msgstr "Laitteelle ei löytynyt säätimiä"
 
-#: video_v4l2.c:268
+#: src/video_v4l2.c
 msgid "---------Controls---------"
-msgstr ""
+msgstr "--------- Controls ---------"
 
-#: video_v4l2.c:269
+#: src/video_v4l2.c
 msgid "  V4L2 ID   Name and Range"
-msgstr ""
+msgstr "V4L2-tunnuksen nimi ja alue"
 
-#: video_v4l2.c:298 video_v4l2.c:1167
+#: src/video_v4l2.c
 msgid "Device not ready"
-msgstr ""
+msgstr "Laite ei ole valmis"
 
-#: video_v4l2.c:312
+#: src/video_v4l2.c
 #, c-format
 msgid "setting control %s \"%s\" to %d failed with return code %d"
-msgstr ""
+msgstr "säätö %s \" %s \" asetetaan %d epäonnistui paluukoodilla %d"
 
-#: video_v4l2.c:318
+#: src/video_v4l2.c
 #, c-format
 msgid "Set control \"%s\" to value %d"
-msgstr ""
+msgstr "Aseta ohjaus \" %s \" arvoon %d"
 
-#: video_v4l2.c:356
+#: src/video_v4l2.c
 #, c-format
 msgid "%s control option value %d is below minimum.  Using minimum"
-msgstr ""
+msgstr "%s ohjausvaihtoehdon arvo %d on minimiarvon alapuolella. Käyttämällä minimiä"
 
-#: video_v4l2.c:362
+#: src/video_v4l2.c
 #, c-format
 msgid "%s control option value %d is above maximum.  Using maximum"
-msgstr ""
+msgstr "%s ohjausvaihtoehdon arvo %d on maksimiarvon yläpuolella. Maksimi"
 
-#: video_v4l2.c:375
+#: src/video_v4l2.c
 msgid "control type not supported yet"
-msgstr ""
+msgstr "ohjaustyyppiä ei tueta vielä"
 
-#: video_v4l2.c:541
+#: src/video_v4l2.c
 #, c-format
 msgid ""
-"Unable to query input %d. VIDIOC_ENUMINPUT, if you use a WEBCAM change input "
-"value in conf by -1"
+"Unable to query input %d. VIDIOC_ENUMINPUT, if you use a WEBCAM change input value in "
+"conf by -1"
 msgstr ""
+"Syöttöä %d ei voida kysyä. VIDIOC ENUMINPUT, jos käytät WEBCAM-muutostuloaarvo "
+"suhdeluvulla -1"
 
-#: video_v4l2.c:549
+#: src/video_v4l2.c
 #, c-format
 msgid "Name = \"%s\", type 0x%08X, status %08x"
-msgstr ""
+msgstr "Nimi = \" %s \", kirjoita 0x %08X, tila %08x"
 
-#: video_v4l2.c:555
+#: src/video_v4l2.c
 #, c-format
 msgid "Name = \"%s\",- TUNER"
-msgstr ""
+msgstr "Nimi = \" %s \", - TUNER"
 
-#: video_v4l2.c:560
+#: src/video_v4l2.c
 #, c-format
 msgid "Name = \"%s\"- CAMERA"
-msgstr ""
+msgstr "Nimi = \" %s \" - KAMERA"
 
-#: video_v4l2.c:565
+#: src/video_v4l2.c
 #, c-format
 msgid "Error selecting input %d VIDIOC_S_INPUT"
-msgstr ""
+msgstr "Virhe valittaessa tuloa %d VIDIOC S INPUT"
 
-#: video_v4l2.c:591
+#: src/video_v4l2.c
 msgid "Device does not support specifying PAL/NTSC norm"
-msgstr ""
+msgstr "Laite ei tue PAL / NTSC-normin määrittämistä"
 
-#: video_v4l2.c:603
+#: src/video_v4l2.c
 #, c-format
 msgid "- video standard %s"
-msgstr ""
+msgstr "- videostandardi %s"
 
-#: video_v4l2.c:620
+#: src/video_v4l2.c
 #, c-format
 msgid "Error selecting standard method %d VIDIOC_S_STD"
-msgstr ""
+msgstr "Virhe valitessa standardimenetelmää %d VIDIOC S STD"
 
-#: video_v4l2.c:626
+#: src/video_v4l2.c
 msgid "Video standard set to NTSC"
-msgstr ""
+msgstr "Videostandardiksi asetettu NTSC"
 
-#: video_v4l2.c:628
+#: src/video_v4l2.c
 msgid "Video standard set to SECAM"
-msgstr ""
+msgstr "Videostandardiksi asetettu SECAM"
 
-#: video_v4l2.c:630
+#: src/video_v4l2.c
 msgid "Video standard set to PAL"
-msgstr ""
+msgstr "Videon vakioasetus on PAL"
 
-#: video_v4l2.c:658
+#: src/video_v4l2.c
 #, c-format
 msgid "tuner %d VIDIOC_G_TUNER"
-msgstr ""
+msgstr "viritin %d VIDIOC G TUNER"
 
-#: video_v4l2.c:663
+#: src/video_v4l2.c
 #, c-format
 msgid "Set tuner %d"
-msgstr ""
+msgstr "Aseta viritin %d"
 
-#: video_v4l2.c:674
+#: src/video_v4l2.c
 #, c-format
 msgid "freq %ul VIDIOC_S_FREQUENCY"
-msgstr ""
+msgstr "Freq %ul VIDIOK-SIVUUS"
 
-#: video_v4l2.c:679
+#: src/video_v4l2.c
 #, c-format
 msgid "Set Frequency to %ul"
-msgstr ""
+msgstr "Aseta taajuudeksi %ul"
 
-#: video_v4l2.c:704
+#: src/video_v4l2.c
 #, c-format
 msgid "Testing palette %c%c%c%c (%dx%d)"
-msgstr ""
+msgstr "Testauspaletti %c %c %c %c ( %dx %d)"
 
-#: video_v4l2.c:716
+#: src/video_v4l2.c
 #, c-format
 msgid "Adjusting resolution from %ix%i to %ix%i."
-msgstr ""
+msgstr "Resoluution säätäminen arvosta %ix %i arvoon %ix %i."
 
-#: video_v4l2.c:723
+#: src/video_v4l2.c
 msgid "Adjusted resolution not modulo 8."
-msgstr ""
+msgstr "Oikaistu resoluutio ei modulo 8."
 
-#: video_v4l2.c:725
+#: src/video_v4l2.c
 msgid "Specify different palette or width/height in config file."
-msgstr ""
+msgstr "Määritä konfigurointitiedostossa eri paletti tai leveys / korkeus."
 
-#: video_v4l2.c:734
+#: src/video_v4l2.c
 msgid ""
 "Error setting pixel format.\n"
 "VIDIOC_S_FMT: "
 msgstr ""
+"Virhe pikselimuodon asettamisessa. \n"
+" VIDIOC S FMT:"
 
-#: video_v4l2.c:742
+#: src/video_v4l2.c
 #, c-format
 msgid "Using palette %c%c%c%c (%dx%d)"
-msgstr ""
+msgstr "Käyttämällä palettia %c %c %c %c ( %dx %d)"
 
-#: video_v4l2.c:747
+#: src/video_v4l2.c
 #, c-format
 msgid "Bytesperlines %d sizeimage %d colorspace %08x"
-msgstr ""
+msgstr "Bytesperlines %d kokokuva %d väriavaruus %08x"
 
-#: video_v4l2.c:777
+#: src/video_v4l2.c
 #, c-format
 msgid "Adjusting to width (%d)"
-msgstr ""
+msgstr "Säätö leveyteen ( %d)"
 
-#: video_v4l2.c:785
+#: src/video_v4l2.c
 #, c-format
 msgid "Adjusting to height (%d)"
-msgstr ""
+msgstr "Säätö korkeuteen ( %d)"
 
-#: video_v4l2.c:790
-msgid ""
-"H264(21) format not supported via videodevice.  Changing to default palette"
-msgstr ""
+#: src/video_v4l2.c
+msgid "H264(21) format not supported via videodevice.  Changing to default palette"
+msgstr "H264 (21) -muotoa ei tueta videolaitteen kautta. Vaihtaminen oletuspalettiin"
 
-#: video_v4l2.c:803
+#: src/video_v4l2.c
 #, c-format
 msgid "Configuration palette index %d (%s) for %dx%d doesn't work."
-msgstr ""
+msgstr "Asetuspaletti-hakemisto %d (%s) %dx%d: lle ei toimi."
 
-#: video_v4l2.c:812
+#: src/video_v4l2.c
 msgid "Supported palettes:"
-msgstr ""
+msgstr "Tuetut paletit:"
 
-#: video_v4l2.c:821
+#: src/video_v4l2.c
 #, c-format
 msgid "%d - %s (compressed : %d) (%#x)"
-msgstr ""
+msgstr "%d - %s (pakattu: %d) ( %# x)"
 
-#: video_v4l2.c:841
+#: src/video_v4l2.c
 #, c-format
 msgid "Selected palette %s"
-msgstr ""
+msgstr "Valittu paletti %s"
 
-#: video_v4l2.c:848
+#: src/video_v4l2.c
 #, c-format
 msgid "Palette selection failed for format %s"
-msgstr ""
+msgstr "Paletin valinta epäonnistui muodossa %s"
 
-#: video_v4l2.c:853
+#: src/video_v4l2.c
 msgid "Unable to find a compatible palette format."
-msgstr ""
+msgstr "Yhteensopivaa paletin muotoa ei löydy."
 
-#: video_v4l2.c:879
+#: src/video_v4l2.c
 #, c-format
 msgid "Error requesting buffers %d for memory map. VIDIOC_REQBUFS"
-msgstr ""
+msgstr "Virhe pyytäessä puskureita %d muistikartalle. VIDIOK-TARKASTUKSET"
 
-#: video_v4l2.c:886
+#: src/video_v4l2.c
 #, c-format
 msgid "mmap information: frames=%d"
-msgstr ""
+msgstr "mmap-tiedot: kehykset = %d"
 
-#: video_v4l2.c:890
+#: src/video_v4l2.c
 #, c-format
 msgid "Insufficient buffer memory %d < MIN_MMAP_BUFFERS."
-msgstr ""
+msgstr "Puskurimuisti ei riitä %d <MIN MMAP puskurit."
 
-#: video_v4l2.c:897 video_v4l2.c:1131
+#: src/video_v4l2.c
 msgid "Out of memory."
-msgstr ""
+msgstr "Muisti loppu."
 
-#: video_v4l2.c:912
+#: src/video_v4l2.c
 #, c-format
 msgid ""
 "Error querying buffer %i\n"
 "VIDIOC_QUERYBUF: "
 msgstr ""
+"Virhe kyselyssä puskurista %i \n"
+"VIDIOKOKERU:"
 
-#: video_v4l2.c:925
+#: src/video_v4l2.c
 #, c-format
 msgid "Error mapping buffer %i mmap"
-msgstr ""
+msgstr "Virhe kartoitettaessa puskuria %i mmap"
 
-#: video_v4l2.c:932
+#: src/video_v4l2.c
 #, c-format
 msgid "%i length=%d Address (%x)"
-msgstr ""
+msgstr "%i pituus = %d osoite ( %x)"
 
-#: video_v4l2.c:953
+#: src/video_v4l2.c
 msgid "Error starting stream. VIDIOC_STREAMON"
-msgstr ""
+msgstr "Virhe käynnistettäessä suoratoisto. VIDIOKIRJAUS"
 
-#: video_v4l2.c:996
+#: src/video_v4l2.c
 #, c-format
 msgid "1) vid_source->pframe %i"
-msgstr ""
+msgstr "1) vid lähde-> kehys %i"
 
-#: video_v4l2.c:1057
+#: src/video_v4l2.c
 #, c-format
 msgid "the_buffer index %d Address (%x)"
-msgstr ""
+msgstr "puskuri-indeksi %d Osoite ( %x)"
 
-#: video_v4l2.c:1184 video_v4l2.c:1205
+#: src/video_v4l2.c
 msgid "Errors occurred during device select"
-msgstr ""
+msgstr "Laitteen valinnan aikana tapahtui virheitä"
 
-#: video_v4l2.c:1218
+#: src/video_v4l2.c
 #, c-format
 msgid "Using videodevice %s and input %d"
-msgstr ""
+msgstr "Videolaitteen %s käyttäminen ja syöttö %d"
 
-#: video_v4l2.c:1234 video_v4l2.c:1564 video_v4l2.c:1650
+#: src/video_v4l2.c
 #, c-format
 msgid "Failed to open video device %s"
-msgstr ""
+msgstr "Videolaitteen %s avaaminen epäonnistui"
 
-#: video_v4l2.c:1296
+#: src/video_v4l2.c
 msgid "Not a V4L2 device?"
-msgstr ""
+msgstr "Etkö ole V4L2-laite?"
 
-#: video_v4l2.c:1333
+#: src/video_v4l2.c
 msgid "Device does not support capturing."
-msgstr ""
+msgstr "Laite ei tue sieppausta."
 
-#: video_v4l2.c:1346 video_v4l2.c:1354
+#: src/video_v4l2.c
+#, c-format
+msgid "Trying to set fps to %d"
+msgstr "Yritetään asettaa fps arvoon %d"
+
+#: src/video_v4l2.c
+#, c-format
+msgid "Error setting fps. Return code %d"
+msgstr "Virhe fps: n asettamisessa. Palautuskoodi %d"
+
+#: src/video_v4l2.c
+#, c-format
+msgid "Device set fps to %d"
+msgstr "Laite on asetettu fps arvoon %d"
+
+#: src/video_v4l2.c
 msgid "V4L2 is not enabled"
-msgstr ""
+msgstr "V4L2 ei ole käytössä"
 
-#: video_v4l2.c:1427 video_v4l2.c:1494 video_v4l2.c:1537
+#: src/video_v4l2.c
 msgid "V4L2 is not enabled."
-msgstr ""
+msgstr "V4L2 ei ole käytössä."
 
-#: video_v4l2.c:1662
+#: src/video_v4l2.c
 #, c-format
 msgid "Testing palette %s (%c%c%c%c)"
-msgstr ""
+msgstr "Testauspaletti %s ( %c %c %c %c)"
 
-#: video_v4l2.c:1674
+#: src/video_v4l2.c
 #, c-format
 msgid "  Width: %d, Height %d"
-msgstr ""
+msgstr "Leveys: %d, korkeus %d"
 
-#: video_v4l2.c:1685
+#: src/video_v4l2.c
 #, c-format
 msgid "    Framerate %d/%d"
-msgstr ""
+msgstr "Kehysnopeus %d / %d"
 
-#: webu.c:240
+#: src/webu.c
 #, c-format
 msgid "Invalid url: %s"
-msgstr ""
+msgstr "Virheellinen URL: %s"
 
-#: webu.c:258
+#: src/webu.c
 msgid "Error decoding url"
-msgstr ""
+msgstr "Virhe URL-osoitteen purkamisessa"
 
-#: webu.c:462
+#: src/webu.c
 #, c-format
 msgid "Sent url: %s"
-msgstr ""
+msgstr "Lähetetty URL: %s"
 
-#: webu.c:471
+#: src/webu.c
 #, c-format
 msgid "Decoded url: %s"
-msgstr ""
+msgstr "Koodattu URL: %s"
 
-#: webu.c:579
-msgid "httpd is going to restart"
-msgstr ""
+#: src/webu.c
+msgid "Restarting all threads"
+msgstr "Käynnistä kaikki ketjut uudelleen"
 
-#: webu.c:584
+#: src/webu.c
 #, c-format
-msgid "httpd is going to restart thread %d"
-msgstr ""
+msgid "Restarting thread %d"
+msgstr "Langan %d käynnistäminen uudelleen"
 
-#: webu.c:620 webu.c:720 webu_html.c:1257 webu_text.c:663 webu_text.c:854
-#: webu_text.c:1099
+#: src/webu.c
+#, c-format
+msgid "Quitting thread %d"
+msgstr "Lopeta lanka %d"
+
+#: src/webu.c src/webu_html.c src/webu_text.c
 #, c-format
 msgid "Invalid action requested: >%s< >%s< >%s<"
-msgstr ""
+msgstr "Virheellinen toimenpide pyydetty:> %s <> %s <> %s <"
 
-#: webu.c:683
+#: src/webu.c
 msgid "Native Language : on"
-msgstr ""
+msgstr "Äidinkieli: päällä"
 
-#: webu.c:685
+#: src/webu.c
 msgid "Native Language : off"
-msgstr ""
+msgstr "Äidinkieli: pois päältä"
 
-#: webu.c:689
+#: src/webu.c
 msgid "Set the value to null/zero"
-msgstr ""
+msgstr "Aseta arvoksi nolla / nolla"
 
-#: webu.c:813
+#: src/webu.c
 #, c-format
 msgid "Connection from: %s"
-msgstr ""
+msgstr "Yhteys: %s"
 
-#: webu.c:900 webu.c:912 webu.c:960
+#: src/webu.c
 #, c-format
 msgid "Failed authentication from %s"
-msgstr ""
+msgstr "Epäonnistunut todennus kohteelta %s"
 
-#: webu.c:1042
+#: src/webu.c
 msgid "No webcontrol user:pass provided"
-msgstr ""
+msgstr "Ei webcontrol-käyttäjää: pass annettu"
 
-#: webu.c:1060
+#: src/webu.c
 msgid "No stream user:pass provided"
-msgstr ""
+msgstr "Ei stream-käyttäjää: pass annettu"
 
-#: webu.c:1095 webu_stream.c:255 webu_stream.c:295
+#: src/webu.c src/webu_stream.c
 msgid "Invalid response"
-msgstr ""
+msgstr "Virheellinen vastaus"
 
-#: webu.c:1182 webu.c:1254
+#: src/webu.c
 #, c-format
 msgid "Invalid Method requested: %s"
-msgstr ""
+msgstr "Pyydetty virheellinen menetelmä: %s"
 
-#: webu.c:1221 webu.c:1303
+#: src/webu.c
 #, c-format
 msgid "send page failed %d"
-msgstr ""
+msgstr "lähetys sivu epäonnistui %d"
 
-#: webu.c:1436
+#: src/webu.c
 msgid "Basic authentication: available"
-msgstr ""
+msgstr "Perustodennus: saatavana"
 
-#: webu.c:1439 webu.c:1442 webu.c:1445
+#: src/webu.c
 msgid "Basic authentication: disabled"
-msgstr ""
+msgstr "Perustodennus: poistettu käytöstä"
 
-#: webu.c:1459
+#: src/webu.c
 msgid "Digest authentication: available"
-msgstr ""
+msgstr "Digest-todennus: saatavana"
 
-#: webu.c:1462 webu.c:1465 webu.c:1468
+#: src/webu.c
 msgid "Digest authentication: disabled"
-msgstr ""
+msgstr "Digest-todennus: poistettu käytöstä"
 
-#: webu.c:1481
+#: src/webu.c
 msgid "libmicrohttpd libary too old ipv6 disabled"
-msgstr ""
+msgstr "libmicrohttpd libary liian vanha ipv6 poistettu käytöstä"
 
-#: webu.c:1488
+#: src/webu.c
 msgid "IPV6: available"
-msgstr ""
+msgstr "IPV6: saatavana"
 
-#: webu.c:1490
+#: src/webu.c
 msgid "IPV6: disabled"
-msgstr ""
+msgstr "IPV6: poistettu käytöstä"
 
-#: webu.c:1503 webu.c:1506
+#: src/webu.c
 msgid "libmicrohttpd libary too old SSL/TLS disabled"
-msgstr ""
+msgstr "libmicrohttpd libary liian vanha SSL / TLS poistettu käytöstä"
 
-#: webu.c:1513
+#: src/webu.c
 msgid "SSL/TLS: available"
-msgstr ""
+msgstr "SSL / TLS: saatavana"
 
-#: webu.c:1516 webu.c:1519 webu.c:1522
+#: src/webu.c
 msgid "SSL/TLS: disabled"
-msgstr ""
+msgstr "SSL / TLS: poistettu käytöstä"
 
-#: webu.c:1570
+#: src/webu.c
 msgid "Error reading file for SSL/TLS support."
-msgstr ""
+msgstr "Virhe luettaessa tiedostoa SSL / TLS-tuelle."
 
-#: webu.c:1592 webu.c:1605
+#: src/webu.c
 msgid "SSL/TLS requested but no cert file provided.  SSL/TLS disabled"
 msgstr ""
+"SSL / TLS pyydetty, mutta sertifikaattitiedostoa ei toimitettu. SSL / TLS poistettu "
+"käytöstä"
 
-#: webu.c:1597 webu.c:1610
+#: src/webu.c
 msgid "SSL/TLS requested but no key file provided.  SSL/TLS disabled"
 msgstr ""
+"SSL / TLS pyydetty, mutta avaintiedostoa ei toimitettu. SSL / TLS poistettu käytöstä"
 
-#: webu.c:1821
+#: src/webu.c
 #, c-format
 msgid "Starting webcontrol on port %d"
-msgstr ""
+msgstr "Web-ohjauksen käynnistäminen portissa %d"
 
-#: webu.c:1837
+#: src/webu.c
 msgid "Unable to start MHD"
-msgstr ""
+msgstr "MHD: tä ei voi käynnistää"
 
-#: webu.c:1874
+#: src/webu.c
+#, c-format
+msgid "Started webcontrol on port %d"
+msgstr "Aloitti verkkohallinnan portissa %d"
+
+#: src/webu.c
+#, c-format
+msgid "Started camera %d stream on port/camera_id %d/%d"
+msgstr "Aloitettu kameran %d virta portissa / kameran tunnus %d / %d"
+
+#: src/webu.c
+#, c-format
+msgid "Started camera %d stream on port %d"
+msgstr "Aloitettu kameran %d virta portissa %d"
+
+#: src/webu.c
 #, c-format
 msgid "Starting all camera streams on port %d"
-msgstr ""
+msgstr "Kaikkien kameravirtojen käynnistäminen portissa %d"
 
-#: webu.c:1878
+#: src/webu.c
 #, c-format
 msgid "Starting camera %d stream on port %d"
-msgstr ""
+msgstr "Kameran %d käynnistysvirta portissa %d"
 
-#: webu.c:1905
+#: src/webu.c
 #, c-format
 msgid "Unable to start stream for camera %d"
-msgstr ""
+msgstr "Kameran %d suoratoistoa ei voi aloittaa"
 
-#: webu.c:1933 webu.c:1951
+#: src/webu.c
 #, c-format
 msgid "Duplicate port requested %d"
-msgstr ""
+msgstr "Päällekkäinen portti pyydettiin %d"
 
-#: webu_html.c:260 webu_html.c:270 webu_html.c:282
+#: src/webu_html.c
 msgid "Cameras"
 msgstr "Kamerat"
 
-#: webu_html.c:262 webu_html.c:291 webu_html.c:809
+#: src/webu_html.c
 msgid "Camera"
 msgstr "Kamera"
 
-#: webu_html.c:283
+#: src/webu_html.c
 msgid "All"
 msgstr "Kaikki"
 
-#: webu_html.c:329
+#: src/webu_html.c
 msgid "Action"
 msgstr "Toiminta"
 
-#: webu_html.c:330
+#: src/webu_html.c
 msgid "Start Event"
 msgstr "Aloita tapahtuma"
 
-#: webu_html.c:331
+#: src/webu_html.c
 msgid "End Event"
 msgstr "Lopeta tapahtuma"
 
-#: webu_html.c:332
+#: src/webu_html.c
 msgid "Snapshot"
 msgstr "Snapshot"
 
-#: webu_html.c:333
+#: src/webu_html.c
 msgid "Change Configuration"
 msgstr "Muuta kokoonpanoa"
 
-#: webu_html.c:334
+#: src/webu_html.c
 msgid "Write Configuration"
 msgstr "Kirjoita kokoonpano"
 
-#: webu_html.c:335
+#: src/webu_html.c
 msgid "Tracking"
 msgstr "Seuranta"
 
-#: webu_html.c:336
+#: src/webu_html.c
 msgid "Pause"
 msgstr "Keskeytä"
 
-#: webu_html.c:337
+#: src/webu_html.c
 msgid "Start"
 msgstr "Alkaa"
 
-#: webu_html.c:338
+#: src/webu_html.c
 msgid "Restart"
 msgstr "Uudelleenkäynnistää"
 
-#: webu_html.c:359
+#: src/webu_html.c
+msgid "Quit"
+msgstr "Lopeta"
+
+#: src/webu_html.c
 msgid "Help"
 msgstr "Auta"
 
-#: webu_html.c:373
+#: src/webu_html.c
 msgid "No Configuration Options"
 msgstr "Ei kokoonpanoasetuksia"
 
-#: webu_html.c:377
+#: src/webu_html.c
 msgid "Limited Configuration Options"
 msgstr "Rajoitetut määritys vaihtoehdot"
 
-#: webu_html.c:381
+#: src/webu_html.c
 msgid "Advanced Configuration Options"
 msgstr "Lisäasetukset"
 
-#: webu_html.c:385
+#: src/webu_html.c
 msgid "Restricted Configuration Options"
 msgstr "Luottamukselliset asetukset"
 
-#: webu_html.c:399 webu_html.c:410 webu_html.c:897
+#: src/webu_html.c
 msgid "All Cameras"
 msgstr "Kaikki kamerat"
 
-#: webu_html.c:400 webu_html.c:811 webu_html.c:820
+#: src/webu_html.c
 msgid "Not running"
 msgstr "ei aktiivinen"
 
-#: webu_html.c:401 webu_html.c:812 webu_html.c:821
+#: src/webu_html.c
 msgid "Lost connection"
 msgstr "Yhteys menetetty"
 
-#: webu_html.c:402 webu_html.c:813 webu_html.c:822
+#: src/webu_html.c
 msgid "Paused"
 msgstr "tauota"
 
-#: webu_html.c:402 webu_html.c:813 webu_html.c:822
+#: src/webu_html.c
 msgid "Active"
 msgstr "aktiivinen"
 
-#: webu_html.c:441
+#: src/webu_html.c
 msgid "Select option"
 msgstr "Valitse vaihtoehto"
 
-#: webu_html.c:525 webu_html.c:558
+#: src/webu_html.c
 msgid "Save"
 msgstr "Tallentaa"
 
-#: webu_html.c:553
+#: src/webu_html.c
 msgid "Pan/Tilt"
 msgstr "kääntää / kallistaa"
 
-#: webu_html.c:554
+#: src/webu_html.c
 msgid "Absolute Change"
 msgstr "Absoluuttinen muutos"
 
-#: webu_html.c:555
+#: src/webu_html.c
 msgid "Center"
 msgstr "Keskus"
 
-#: webu_html.c:556
+#: src/webu_html.c
 msgid "Pan"
 msgstr "kääntää"
 
-#: webu_html.c:557
+#: src/webu_html.c
 msgid "Tilt"
 msgstr "kallistaa"
 
-#: webu_stream.c:166 webu_stream.c:172
+#: src/webu_stream.c
 #, c-format
 msgid "Invalid thread specified: %s"
-msgstr ""
+msgstr "Virheellinen säike määritetty: %s"
 
-#: webu_stream.c:179
+#: src/webu_stream.c
 #, c-format
 msgid "Invalid URL for a camera specific port: %s"
-msgstr ""
+msgstr "Virheellinen URL-osoite kamerakohtaiselle portille: %s"
 
-#: webu_stream.c:186
+#: src/webu_stream.c
 #, c-format
 msgid "URL for thread 0 is not valid when using camera specific files.: %s"
-msgstr ""
+msgstr "Langan 0 URL-osoite ei kelpaa, kun käytetään kamerakohtaisia ​​tiedostoja .: %s"
 
-#: webu_stream.c:194
+#: src/webu_stream.c
 #, c-format
 msgid "Bad URL for a camera specific port: %s"
-msgstr ""
+msgstr "Virheellinen URL-osoite kamerakohtaiselle portille: %s"
 
-#: webu_stream.c:288
+#: src/webu_stream.c
 msgid "Could not get image to stream."
-msgstr ""
+msgstr "Kuvan suoratoisto ei onnistunut."
 
-#: webu_text.c:436
-msgid "httpd quits"
-msgstr ""
-
-#: webu_text.c:441
+#: src/webu_text.c
 #, c-format
-msgid "httpd quits thread %d"
-msgstr ""
-
-#: webu_text.c:899
-#, c-format
-msgid "'%s' option is depreciated.  New option name is `%s'"
-msgstr ""
-
-#~ msgid "Make Movie"
-#~ msgstr "Tee elokuva"
-
-#~ msgid "Quit"
-#~ msgstr "Lopeta"
-
-#~ msgid "All  "
-#~ msgstr "Kaikki"
+msgid "'%s' option is depreciated.  New option name is '%s'"
+msgstr "' %s' -vaihtoehto on poistettu. Uuden vaihtoehdon nimi on '%s' "
