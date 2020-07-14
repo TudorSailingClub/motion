@@ -313,6 +313,7 @@ int webu_stream_static(struct webui_ctx *webui) {
         return MHD_NO;
     }
 
+MOTION_LOG(INF, TYPE_STREAM, NO_ERRNO, _("TGF: resp_size [%d]"), webui->resp_size);
     response = MHD_create_response_from_buffer (webui->resp_size
         ,(void *)webui->resp_page, MHD_RESPMEM_MUST_COPY);
     if (!response){
@@ -326,6 +327,7 @@ int webu_stream_static(struct webui_ctx *webui) {
     }
 
     MHD_add_response_header (response, MHD_HTTP_HEADER_CONTENT_TYPE, "image/jpeg;");
+MOTION_LOG(INF, TYPE_STREAM, NO_ERRNO, _("TGF: webui->resp_used [%d]"), webui->resp_used);
     snprintf(resp_used, 20, "%9ld\r\n\r\n",(long)webui->resp_used);
     MHD_add_response_header (response, MHD_HTTP_HEADER_CONTENT_LENGTH, resp_used);
 
