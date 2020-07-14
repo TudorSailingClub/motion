@@ -298,7 +298,6 @@ int webu_stream_static(struct webui_ctx *webui) {
     /* Create the response for the static image request*/
     int retcd;
     struct MHD_Response *response;
-    char resp_used[20];
 
     if (webu_stream_checks(webui) == -1) return MHD_NO;
 
@@ -313,8 +312,9 @@ int webu_stream_static(struct webui_ctx *webui) {
         return MHD_NO;
     }
 
-MOTION_LOG(INF, TYPE_STREAM, NO_ERRNO, _("TGF: resp_size [%d]"), webui->resp_size);
-    response = MHD_create_response_from_buffer (webui->resp_size
+MOTION_LOG(NTC, TYPE_STREAM, NO_ERRNO, _("TGF: webui->resp_size [%d]"), webui->resp_size);
+MOTION_LOG(NTC, TYPE_STREAM, NO_ERRNO, _("TGF: webui->resp_used: 01 [%d]"), webui->resp_used);
+    response = MHD_create_response_from_buffer (webui->resp_used
         ,(void *)webui->resp_page, MHD_RESPMEM_MUST_COPY);
     if (!response){
         MOTION_LOG(ERR, TYPE_STREAM, NO_ERRNO, _("Invalid response"));
@@ -327,9 +327,7 @@ MOTION_LOG(INF, TYPE_STREAM, NO_ERRNO, _("TGF: resp_size [%d]"), webui->resp_siz
     }
 
     MHD_add_response_header (response, MHD_HTTP_HEADER_CONTENT_TYPE, "image/jpeg;");
-MOTION_LOG(INF, TYPE_STREAM, NO_ERRNO, _("TGF: webui->resp_used [%d]"), webui->resp_used);
-    snprintf(resp_used, 20, "%9ld\r\n\r\n",(long)webui->resp_used);
-    MHD_add_response_header (response, MHD_HTTP_HEADER_CONTENT_LENGTH, resp_used);
+MOTION_LOG(NTC, TYPE_STREAM, NO_ERRNO, _("TGF: webui->resp_used: 02 [%d]"), webui->resp_used);
 
     retcd = MHD_queue_response (webui->connection, MHD_HTTP_OK, response);
     MHD_destroy_response (response);
